@@ -22,7 +22,7 @@ export default function document() {
                 />
                 <meta property="og:image" content="" />
                 <meta property="og:title" content="Apple Store" />
-                {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
@@ -31,7 +31,7 @@ export default function document() {
                 <link
                     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
                     rel="stylesheet"
-                /> */}
+                />
                 <title>Apple Store</title>
             </Head>
             <body>
