@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/apple-store-database/node_modules
 /.pnp
 .pnp.js
 

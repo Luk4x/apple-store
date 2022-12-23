@@ -1,0 +1,26 @@
+{
+    "root": true,
+    "project": {
+        "name": "apple-store-database"
+    },
+    "api": {
+        "projectId": "eg7o3xb7",
+        "dataset": "production"
+    },
+    "plugins": [
+        "@sanity/base",
+        "@sanity/default-layout",
+        "@sanity/default-login",
+        "@sanity/desk-tool",
+        "barcode-input"
+    ],
+    "env": {
+        "development": {}
+    },
+    "parts": [
+        {
+            "name": "part:@sanity/base/schema",
+            "path": "./schemas/schema"
+        }
+    ]
+}
