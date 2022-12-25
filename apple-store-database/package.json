@@ -1,36 +1,36 @@
 {
-  "name": "apple-store-database",
-  "private": true,
-  "version": "1.0.0",
-  "description": "devdojo",
-  "main": "package.json",
-  "author": "Lucas Maciel <luk4xm4ci3l@gmail.com>",
-  "license": "UNLICENSED",
-  "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
-  },
-  "keywords": [
-    "sanity"
-  ],
-  "dependencies": {
-    "@sanity/base": "^2.35.2",
-    "@sanity/core": "^2.35.0",
-    "@sanity/default-layout": "^2.35.2",
-    "@sanity/default-login": "^2.35.2",
-    "@sanity/desk-tool": "^2.35.2",
-    "@sanity/eslint-config-studio": "^2.0.1",
-    "@sanity/vision": "^3.1.2",
-    "eslint": "^8.6.0",
-    "prop-types": "^15.7",
-    "react": "^17.0",
-    "react-barcode": "^1.3.2",
-    "react-dom": "^17.0",
-    "styled-components": "^5.2.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Luk4x/apple-store.git"
-  }
+    "name": "apple-store-database",
+    "private": true,
+    "version": "1.0.0",
+    "description": "devdojo",
+    "main": "package.json",
+    "author": "Lucas Maciel <luk4xm4ci3l@gmail.com>",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "sanity start",
+        "build": "sanity build"
+    },
+    "keywords": [
+        "sanity"
+    ],
+    "dependencies": {
+        "@sanity/base": "^2.35.2",
+        "@sanity/core": "^2.35.0",
+        "@sanity/default-layout": "^2.35.2",
+        "@sanity/default-login": "^2.35.2",
+        "@sanity/desk-tool": "^2.35.2",
+        "@sanity/eslint-config-studio": "^2.0.1",
+        "@sanity/vision": "^3.1.2",
+        "eslint": "^8.6.0",
+        "prop-types": "^15.7",
+        "react": "^17.0",
+        "react-barcode": "^1.3.2",
+        "react-dom": "^17.0",
+        "react-icons": "^4.7.1",
+        "styled-components": "^5.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Luk4x/apple-store.git"
+    }
 }

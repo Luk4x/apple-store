@@ -1,9 +1,17 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { groq } from 'next-sanity';
+import { sanityClient } from '../../sanity';
 
 type Data = {
     categories: Category[];
 };
 
-export default function (req: NextApiRequest, res: NextApiResponse<Data>): void {
-    // const categories = await sanityClient.fetch(query);
+const query = groq`*[_type == "category"] {
+_id,
+...
+}`;
+
+export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+    const categories = await sanityClient.fetch(query);
+    res.status(200).json({ categories });
 }

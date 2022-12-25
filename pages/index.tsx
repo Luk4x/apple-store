@@ -1,9 +1,18 @@
-import type { GetServerSideProps, NextPage } from 'next';
-import Header from '../components/Header';
-import Landing from '../components/Landing';
+import type { GetServerSideProps } from 'next';
+
 import { Tab } from '@headlessui/react';
 
-const Home: NextPage = () => {
+import Header from '../components/Header';
+import Landing from '../components/Landing';
+import { fetchCategories } from '../utils/fetchCategories';
+
+interface Props {
+    categories: Category[];
+}
+
+const Home = ({ categories }: Props) => {
+    console.log(categories);
+
     return (
         <div>
             <Header />
@@ -16,7 +25,23 @@ const Home: NextPage = () => {
                         Novas Promoções
                     </h1>
                     <Tab.Group>
-                        <Tab.List className="flex justify-center"></Tab.List>
+                        <Tab.List className="flex justify-center">
+                            {categories.map(category => (
+                                <Tab
+                                    key={category._id}
+                                    id={category._id}
+                                    className={({ selected }) =>
+                                        `whitespace-nowrap rounded-t-lg py-3 px-5 text-sm font-light outline-none md:py-6 md:text-base ${
+                                            selected
+                                                ? 'borderGradient bg-[#35383C] text-white'
+                                                : 'border-b-2 border-[#35383c] text-[#747474]'
+                                        }`
+                                    }
+                                >
+                                    {category.title}
+                                </Tab>
+                            ))}
+                        </Tab.List>
                         <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4"></Tab.Panels>
                     </Tab.Group>
                 </div>
@@ -27,10 +52,12 @@ const Home: NextPage = () => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps = async () => {
-    // const categories = fetchCategories()
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+    const categories = await fetchCategories();
 
     return {
-        props: {}
+        props: {
+            categories
+        }
     };
 };

@@ -1,26 +1,33 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "@heroicons/react": "^1.0.6",
-    "next": "latest",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@sanity/cli": "^2.30.5",
-    "@types/node": "18.11.3",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1",
-    "typescript": "4.8.4"
-  }
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "@headlessui/react": "^1.7.7",
+        "@heroicons/react": "^1.0.6",
+        "@portabletext/react": "^2.0.0",
+        "@sanity/image-url": "^1.0.1",
+        "next": "latest",
+        "next-sanity": "^3.1.8",
+        "prettier-plugin-tailwindcss": "^0.2.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@sanity/cli": "^2.30.5",
+        "@types/node": "18.11.3",
+        "@types/react": "18.0.21",
+        "@types/react-dom": "18.0.6",
+        "autoprefixer": "^10.4.12",
+        "postcss": "^8.4.18",
+        "tailwindcss": "^3.2.1",
+        "typescript": "4.8.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Luk4x/apple-store.git"
+    }
 }

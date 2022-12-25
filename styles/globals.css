@@ -20,4 +20,8 @@
     .link {
         @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-[#111] before:transition-all before:duration-200 hover:before:scale-x-100;
     }
+
+    .borderGradient {
+        @apply bg-gradient-to-r from-pink-500 to-violet-500 bg-[length:100%_2px] bg-left-bottom bg-no-repeat pb-1 text-center;
+    }
 }
