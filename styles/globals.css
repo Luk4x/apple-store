@@ -24,4 +24,8 @@
     .borderGradient {
         @apply bg-gradient-to-r from-pink-500 to-violet-500 bg-[length:100%_2px] bg-left-bottom bg-no-repeat pb-1 text-center;
     }
+
+    .tabPanel {
+        @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
+    }
 }

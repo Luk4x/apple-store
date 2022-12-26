@@ -4,14 +4,22 @@ import { Tab } from '@headlessui/react';
 
 import Header from '../components/Header';
 import Landing from '../components/Landing';
+import Product from '../components/Product';
+
 import { fetchCategories } from '../utils/fetchCategories';
+import { fetchProducts } from '../utils/fetchProducts';
 
 interface Props {
     categories: Category[];
+    products: Product[];
 }
 
-const Home = ({ categories }: Props) => {
-    console.log(categories);
+const Home = ({ categories, products }: Props) => {
+    const showProducts = (categoryIndex: number) => {
+        return products
+            .filter(product => product.category._ref === categories[categoryIndex]._id)
+            .map(product => <Product product={product} key={product._id} />);
+    };
 
     return (
         <div>
@@ -42,7 +50,13 @@ const Home = ({ categories }: Props) => {
                                 </Tab>
                             ))}
                         </Tab.List>
-                        <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4"></Tab.Panels>
+                        <Tab.Panels className="mx-auto max-w-fit pt-10 pb-24 sm:px-4">
+                            {[0, 1, 2, 3].map(categoryIndex => (
+                                <Tab.Panel className="tabPanel" key={categoryIndex}>
+                                    {showProducts(categoryIndex)}
+                                </Tab.Panel>
+                            ))}
+                        </Tab.Panels>
                     </Tab.Group>
                 </div>
             </section>
@@ -53,11 +67,15 @@ const Home = ({ categories }: Props) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
-    const categories = await fetchCategories();
+    const [categories, products] = await Promise.all([
+        fetchCategories(),
+        fetchProducts()
+    ]);
 
     return {
         props: {
-            categories
+            categories,
+            products
         }
     };
 };
