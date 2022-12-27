@@ -1,13 +1,26 @@
 import Image from 'next/image';
 import { urlFor } from '../sanity';
 
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cartSlice';
+
 import { ShoppingCartIcon } from '@heroicons/react/outline';
+import { toast } from 'react-hot-toast';
 
 interface Props {
     product: Product;
 }
 
 export default function Product({ product }: Props) {
+    const dispatch = useDispatch();
+    const addProductToCart = (): void => {
+        dispatch(addToCart(product));
+
+        toast.success(`${product.title} added to Cart!`, {
+            position: 'bottom-center'
+        });
+    };
+
     return (
         <div className="flex h-fit w-[320px] select-none flex-col space-y-3 rounded-xl bg-[#35383c] p-8 md:h-[500px] md:w-[400px] md:p-10">
             <div className="relative h-64 w-full md:h-72">
@@ -24,7 +37,10 @@ export default function Product({ product }: Props) {
                     <p>R$ {product.price}</p>
                 </div>
             </div>
-            <div className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]">
+            <div
+                className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]"
+                onClick={addProductToCart}
+            >
                 <ShoppingCartIcon className="h-8 w-8 text-white" />
             </div>
         </div>

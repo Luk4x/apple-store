@@ -8,13 +8,14 @@ import Product from '../components/Product';
 
 import { fetchCategories } from '../utils/fetchCategories';
 import { fetchProducts } from '../utils/fetchProducts';
+import Cart from '../components/Cart';
 
 interface Props {
     categories: Category[];
     products: Product[];
 }
 
-const Home = ({ categories, products }: Props) => {
+export default function Home({ categories, products }: Props) {
     const showProducts = (categoryIndex: number) => {
         return products
             .filter(product => product.category._ref === categories[categoryIndex]._id)
@@ -60,11 +61,10 @@ const Home = ({ categories, products }: Props) => {
                     </Tab.Group>
                 </div>
             </section>
+            <Cart />
         </div>
     );
-};
-
-export default Home;
+}
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
     const [categories, products] = await Promise.all([
