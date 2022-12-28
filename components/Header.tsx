@@ -40,12 +40,14 @@ export default function Header() {
                 <SearchIcon className="headerIcon" />
                 <Link href="/checkout">
                     <div className="relative cursor-pointer">
-                        <span
-                            className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center 
+                        {products.length > 0 && (
+                            <span
+                                className="absolute -right-1 -top-1 z-50 flex h-4 w-4 items-center justify-center 
                             rounded-full bg-gradient-to-r from-pink-500 to-violet-500 text-xs text-white"
-                        >
-                            {products.length}
-                        </span>
+                            >
+                                {products.length}
+                            </span>
+                        )}
                         <ShoppingBagIcon className="headerIcon" />
                     </div>
                 </Link>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { urlFor } from '../sanity';
+import Currency from 'react-currency-formatter';
 
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
@@ -16,7 +17,7 @@ export default function Product({ product }: Props) {
     const addProductToCart = (): void => {
         dispatch(addToCart(product));
 
-        toast.success(`${product.title} added to Cart!`, {
+        toast.success(`${product.title} adicionado ao Carrinho!`, {
             position: 'bottom-center'
         });
     };
@@ -34,7 +35,9 @@ export default function Product({ product }: Props) {
             <div className="flex flex-1 items-center justify-between space-x-3">
                 <div className="space-y-2 text-xl text-white md:text-2xl">
                     <p>{product.title}</p>
-                    <p>R$ {product.price}</p>
+                    <p>
+                        <Currency quantity={product.price} currency="BRL" />
+                    </p>
                 </div>
             </div>
             <div
