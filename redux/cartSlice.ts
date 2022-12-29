@@ -41,11 +41,10 @@ export const selectCartProducts = (state: RootState) => state.cart.products;
 export const selectCartProductsWithId = (state: RootState, id: string) => {
     state.cart.products.filter((product: Product) => product._id === id);
 };
-export const selectCartTotal = (state: RootState) => {
+export const selectCartTotal = (state: RootState) =>
     state.cart.products.reduce(
         (total: number, product: Product) => (total += product.price),
         0
     );
-};
 
 export default cartSlice.reducer;
