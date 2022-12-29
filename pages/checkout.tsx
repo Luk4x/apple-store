@@ -10,6 +10,9 @@ import { useSelector } from 'react-redux';
 import { selectCartProducts, selectCartTotal } from '../redux/cartSlice';
 import { useEffect, useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
+import { Stripe } from 'stripe';
+import { fetchPostJSON } from '../utils/api-helpers';
+import getStripe from '../utils/get-stripejs';
 
 export default function Checkout() {
     const router = useRouter();
@@ -33,6 +36,29 @@ export default function Checkout() {
 
     const createCheckoutSession = async () => {
         setLoading(true);
+
+        const checkoutSession: Stripe.Checkout.Session = await fetchPostJSON(
+            '/api/checkout_sessions',
+            {
+                products: products
+            }
+        );
+
+        if ((checkoutSession as any).statusCode === 500) {
+            console.error((checkoutSession as any).message);
+            return;
+        }
+
+        // Redirect to Stripe Checkout page
+        const stripe = await getStripe();
+
+        // If redirect fails
+        const { error } = await stripe!.redirectToCheckout({
+            sessionId: checkoutSession.id
+        });
+        console.warn(error.message);
+
+        setLoading(false);
     };
 
     return (
