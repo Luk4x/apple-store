@@ -5,7 +5,6 @@ import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
 
 import { useState, useEffect } from 'react';
-import randomString from 'random-string';
 import { useMediaQuery } from 'react-responsive';
 import Currency from 'react-currency-formatter';
 
@@ -18,14 +17,18 @@ import {
 
 import Button from '../components/Button';
 import { fetchLineProducts } from '../utils/fetchLineProducts';
+import { useSession } from 'next-auth/react';
 
 interface Props {
     products: StripeProduct[];
+    trackingNumber: string;
 }
 
-export default function Success({ products }: Props) {
+export default function Success({ products, trackingNumber }: Props) {
+    const { data: session } = useSession();
     const router = useRouter();
     const { session_id } = router.query;
+
     const [mounted, setMounted] = useState(false);
     const [showOrderSummary, setShowOrderSummary] = useState(false);
 
@@ -84,7 +87,10 @@ export default function Success({ products }: Props) {
                             </p>
                             <h4 className="text-lg">
                                 Obrigado{' '}
-                                {/* {session ? session.user?.name?.split(' ')[0] : 'Guest'} */}
+                                {session
+                                    ? session.user?.name?.split(' ')[0]
+                                    : 'Convidado'}
+                                !
                             </h4>
                         </div>
                     </div>
@@ -102,14 +108,7 @@ export default function Success({ products }: Props) {
                             <p className="font-medium text-gray-600">
                                 Número de rastreamento:
                             </p>
-                            <p>
-                                {randomString({
-                                    length: 11,
-                                    numeric: true,
-                                    letters: true,
-                                    special: false
-                                })}
-                            </p>
+                            <p>{trackingNumber}</p>
                         </div>
                     </div>
                     <div className="my-4 mx-4 space-y-4 rounded-md border border-gray-300 p-4 lg:ml-14">
@@ -234,9 +233,18 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ query }) =
     const sessionId = query.session_id as string;
     const products = await fetchLineProducts(sessionId);
 
+    const randomString = require('random-string');
+    const trackingNumber = randomString({
+        length: 11,
+        numeric: true,
+        letters: true,
+        special: false
+    });
+
     return {
         props: {
-            products
+            products,
+            trackingNumber
         }
     };
 };

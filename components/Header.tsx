@@ -5,8 +5,10 @@ import { SearchIcon, ShoppingBagIcon, UserIcon } from '@heroicons/react/outline'
 import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
 
+import { signIn, signOut, useSession } from 'next-auth/react';
+
 export default function Header() {
-    const session = false;
+    const { data: session } = useSession();
     const products = useSelector(selectCartProducts);
 
     return (
@@ -53,13 +55,15 @@ export default function Header() {
                 </Link>
                 {session ? (
                     <Image
-                        src="/apple-logo.png"
-                        width={30}
-                        height={30}
+                        src={session.user?.image || '/apple-logo.png'}
+                        width={35}
+                        height={35}
                         alt="User Image"
+                        className="cursor-pointer rounded-full"
+                        onClick={() => signOut()}
                     />
                 ) : (
-                    <UserIcon className="headerIcon" />
+                    <UserIcon className="headerIcon" onClick={() => signIn()} />
                 )}
             </div>
         </header>

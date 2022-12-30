@@ -2,15 +2,18 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 import { Toaster } from 'react-hot-toast';
 
+import { SessionProvider } from 'next-auth/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     return (
-        <Provider store={store}>
-            <Toaster />
-            <Component {...pageProps} />
-        </Provider>
+        <SessionProvider session={session}>
+            <Provider store={store}>
+                <Toaster />
+                <Component {...pageProps} />
+            </Provider>
+        </SessionProvider>
     );
 }
 

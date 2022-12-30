@@ -10,12 +10,16 @@ import { fetchCategories } from '../utils/fetchCategories';
 import { fetchProducts } from '../utils/fetchProducts';
 import Cart from '../components/Cart';
 
+import { getSession } from 'next-auth/react';
+import type { Session } from 'next-auth';
+
 interface Props {
     categories: Category[];
     products: Product[];
+    session: Session | null;
 }
 
-export default function Home({ categories, products }: Props) {
+export default function Home({ categories, products, session }: Props) {
     const showProducts = (categoryIndex: number) => {
         return products
             .filter(product => product.category._ref === categories[categoryIndex]._id)
@@ -66,16 +70,18 @@ export default function Home({ categories, products }: Props) {
     );
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-    const [categories, products] = await Promise.all([
+export const getServerSideProps: GetServerSideProps<Props> = async context => {
+    const [categories, products, session] = await Promise.all([
         fetchCategories(),
-        fetchProducts()
+        fetchProducts(),
+        getSession(context)
     ]);
 
     return {
         props: {
             categories,
-            products
+            products,
+            session
         }
     };
 };
