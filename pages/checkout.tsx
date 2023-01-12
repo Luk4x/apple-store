@@ -9,7 +9,7 @@ import CheckoutProduct from '../components/CheckoutProduct';
 import { useSelector } from 'react-redux';
 import { selectCartProducts, selectCartTotal } from '../redux/cartSlice';
 import { useEffect, useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/outline';
+import { HiChevronDown } from 'react-icons/hi2';
 import { Stripe } from 'stripe';
 import { fetchPostJSON } from '../utils/api-helpers';
 import getStripe from '../utils/get-stripejs';
@@ -109,7 +109,7 @@ export default function Checkout() {
                                             Taxa estimada para:
                                             <p className="flex cursor-pointer items-end text-blue-500 hover:underline">
                                                 Digite seu CEP
-                                                <ChevronDownIcon className="h-6 w-6" />
+                                                <HiChevronDown className="h-6 w-6" />
                                             </p>
                                         </div>
                                         <p>R$ -</p>

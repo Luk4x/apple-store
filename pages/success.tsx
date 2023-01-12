@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { GetServerSideProps } from 'next';
 import { useRouter } from 'next/router';
@@ -9,11 +8,11 @@ import { useMediaQuery } from 'react-responsive';
 import Currency from 'react-currency-formatter';
 
 import {
-    CheckIcon,
-    ChevronDownIcon,
-    ChevronUpIcon,
-    ShoppingCartIcon
-} from '@heroicons/react/outline';
+    HiOutlineCheck,
+    HiOutlineChevronDown,
+    HiOutlineChevronUp,
+    HiOutlineShoppingCart
+} from 'react-icons/hi2';
 
 import Button from '../components/Button';
 import { fetchLineProducts } from '../utils/fetchLineProducts';
@@ -64,7 +63,7 @@ export default function Success({ products, trackingNumber }: Props) {
                     </Link>
                     <div className="my-8 ml-4 flex space-x-4 lg:ml-14 xl:ml-0">
                         <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black">
-                            <CheckIcon className="h-8 w-8" />
+                            <HiOutlineCheck className="h-8 w-8" />
                         </div>
                         <div>
                             <p className="text-sm text-gray-600">
@@ -128,12 +127,12 @@ export default function Success({ products, trackingNumber }: Props) {
                                     onClick={handleShowOrderSummary}
                                     className="flex items-center space-x-2"
                                 >
-                                    <ShoppingCartIcon className="h-6 w-6" />
+                                    <HiOutlineShoppingCart className="h-6 w-6" />
                                     <p>Resumo do pedido</p>
                                     {showOrderSummaryCondition ? (
-                                        <ChevronDownIcon className="h-4 w-4" />
+                                        <HiOutlineChevronDown className="h-4 w-4" />
                                     ) : (
-                                        <ChevronUpIcon className="h-4 w-4" />
+                                        <HiOutlineChevronUp className="h-4 w-4" />
                                     )}
                                 </button>
                                 <p className="text-xl font-medium text-black">

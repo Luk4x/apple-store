@@ -5,7 +5,7 @@ import Currency from 'react-currency-formatter';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
 
-import { ShoppingCartIcon } from '@heroicons/react/outline';
+import { HiOutlineShoppingCart } from 'react-icons/hi2';
 import { toast } from 'react-hot-toast';
 
 interface Props {
@@ -28,8 +28,8 @@ export default function Product({ product }: Props) {
                 <Image
                     src={urlFor(product.image[0]).url()}
                     alt={product.title}
-                    layout="fill"
-                    objectFit="contain"
+                    fill
+                    className="object-contain"
                 />
             </div>
             <div className="flex items-center justify-center gap-3">
@@ -45,7 +45,7 @@ export default function Product({ product }: Props) {
                     className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]"
                     onClick={addProductToCart}
                 >
-                    <ShoppingCartIcon className="h-8 w-8 text-white" />
+                    <HiOutlineShoppingCart className="h-8 w-8 text-white" />
                 </div>
             </div>
         </div>

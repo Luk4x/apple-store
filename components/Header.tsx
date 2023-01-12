@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { SearchIcon, ShoppingBagIcon, UserIcon } from '@heroicons/react/outline';
+import {
+    HiOutlineMagnifyingGlass,
+    HiOutlineShoppingBag,
+    HiOutlineUser
+} from 'react-icons/hi2';
 import { SiApple } from 'react-icons/si';
 import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
@@ -34,7 +38,7 @@ export default function Header() {
                 </Link>
             </div>
             <div className="flex items-center justify-center gap-x-4 md:w-1/5">
-                <SearchIcon className="headerIcon" />
+                <HiOutlineMagnifyingGlass className="headerIcon" />
                 <Link href="/checkout">
                     <div className="relative cursor-pointer">
                         {products.length > 0 && (
@@ -45,7 +49,7 @@ export default function Header() {
                                 {products.length}
                             </span>
                         )}
-                        <ShoppingBagIcon className="headerIcon" />
+                        <HiOutlineShoppingBag className="headerIcon" />
                     </div>
                 </Link>
                 {session ? (
@@ -58,7 +62,7 @@ export default function Header() {
                         onClick={() => signOut()}
                     />
                 ) : (
-                    <UserIcon className="headerIcon" onClick={() => signIn()} />
+                    <HiOutlineUser className="headerIcon" onClick={() => signIn()} />
                 )}
             </div>
         </header>

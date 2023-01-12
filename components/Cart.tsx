@@ -1,4 +1,4 @@
-import { ShoppingBagIcon } from '@heroicons/react/outline';
+import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
@@ -15,7 +15,7 @@ export default function Cart() {
                         {products.length}
                     </span>
                 )}
-                <ShoppingBagIcon className="headerIcon h-8 w-8" />
+                <HiOutlineShoppingBag className="headerIcon h-8 w-8" />
             </div>
         </Link>
     );

@@ -28,8 +28,8 @@ export default function Landing() {
             <div className="relative inline h-[400px] w-[306px] animate-rocket md:h-[580px] md:w-[380px] xl:h-[680px] xl:w-[480px]">
                 <Image
                     src="/iphone-image-1.png"
-                    layout="fill"
-                    objectFit="contain"
+                    fill
+                    className="object-contain"
                     alt="iPhone Image"
                 />
             </div>
