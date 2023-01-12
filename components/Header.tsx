@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { SearchIcon, ShoppingBagIcon, UserIcon } from '@heroicons/react/outline';
+import { SiApple } from 'react-icons/si';
 import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
 
@@ -15,13 +16,7 @@ export default function Header() {
         <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-[#e7ecee] p-4">
             <div className="flex items-center justify-center md:w-1/5">
                 <Link href="/">
-                    <Image
-                        src="/apple-logo.png"
-                        width={25}
-                        height={50}
-                        alt="Apple Logo Image"
-                        className="cursor-pointer opacity-75 transition hover:opacity-100"
-                    />
+                    <SiApple className="cursor-pointer text-4xl opacity-75 transition hover:opacity-100" />
                 </Link>
             </div>
             <div className="hidden flex-1  items-center justify-center space-x-8 md:flex">
@@ -55,7 +50,7 @@ export default function Header() {
                 </Link>
                 {session ? (
                     <Image
-                        src={session.user?.image || '/apple-logo.png'}
+                        src={session.user?.image || '/user-image.png'}
                         width={35}
                         height={35}
                         alt="User Image"

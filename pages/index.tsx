@@ -29,11 +29,11 @@ export default function Home({ categories, products, session }: Props) {
     return (
         <div>
             <Header />
-            <main className="relative h-[200vh] bg-[#e7ecee]">
+            <main className="relative h-[200vh] bg-[#E7ECEE]">
                 <Landing />
             </main>
-            <section className="relative z-40 -mt-[100vh] min-h-screen bg-[#1b1b1b]">
-                <div className="space-y-10 py-16">
+            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b]">
+                <div className="space-y-10 py-16 ">
                     <h1 className="text-center text-4xl font-medium tracking-wide text-white md:text-5xl">
                         Novas Promoções
                     </h1>

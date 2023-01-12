@@ -18,6 +18,7 @@ import {
 import Button from '../components/Button';
 import { fetchLineProducts } from '../utils/fetchLineProducts';
 import { useSession } from 'next-auth/react';
+import { SiApple } from 'react-icons/si';
 
 interface Props {
     products: StripeProduct[];
@@ -53,29 +54,13 @@ export default function Success({ products, trackingNumber }: Props) {
             </Head>
             <header className="mx-auto max-w-xl">
                 <Link href="/">
-                    <div className="relative ml-4 h-16 w-8 cursor-pointer transition lg:hidden">
-                        <Image
-                            src="/apple-logo.png"
-                            fill
-                            objectFit="contain"
-                            alt="Apple Logo Image"
-                            className="cursor-pointer opacity-75 transition hover:opacity-100"
-                        />
-                    </div>
+                    <SiApple className="relative m-4 cursor-pointer text-6xl opacity-75 transition hover:opacity-100 lg:hidden" />
                 </Link>
             </header>
             <main className="grid grid-cols-1 lg:grid-cols-9">
                 <section className="order-2 mx-auto max-w-xl pb-12 lg:col-span-5 lg:mx-0 lg:max-w-none lg:pr-16 lg:pt-16 xl:pl-16 2xl:pl-44">
                     <Link href="/">
-                        <div className="relative ml-14 hidden h-24 w-12 cursor-pointer transition lg:inline-flex">
-                            <Image
-                                src="/apple-logo.png"
-                                fill
-                                objectFit="contain"
-                                alt="Apple Logo Image"
-                                className="cursor-pointer opacity-75 transition hover:opacity-100"
-                            />
-                        </div>
+                        <SiApple className="relative ml-14 hidden cursor-pointer text-5xl opacity-75 transition hover:opacity-100 lg:inline-flex" />
                     </Link>
                     <div className="my-8 ml-4 flex space-x-4 lg:ml-14 xl:ml-0">
                         <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black">
@@ -166,12 +151,7 @@ export default function Success({ products, trackingNumber }: Props) {
                                         >
                                             <div className="relative flex h-16 w-16 items-center justify-center rounded-md border border-gray-300 bg-[#f1f1f1] text-xs text-white">
                                                 <div className="relative h-7 w-7 animate-bounce rounded-md">
-                                                    <Image
-                                                        src="/apple-logo.png"
-                                                        alt="Apple Logo Image"
-                                                        objectFit="contain"
-                                                        fill
-                                                    />
+                                                    <SiApple className="text-3xl text-black" />
                                                 </div>
                                                 <div className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-gray-500 text-xs">
                                                     {product.quantity}
