@@ -30,6 +30,7 @@ export default function CheckoutProduct({ products, id }: Props) {
                     src={urlFor(products[0].image[0]).url()}
                     alt={products[0].title}
                     fill
+                    sizes="100%"
                     className="object-contain"
                 />
             </div>

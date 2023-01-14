@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
     body {
         @apply font-['Poppins'] text-[#232428];
     }
@@ -11,6 +15,14 @@
 @layer components {
     .headerLink {
         @apply cursor-pointer opacity-75 transition hover:opacity-100;
+    }
+
+    .tooltip {
+        @apply before:absolute before:-left-6 before:-bottom-9 before:rounded-md before:bg-[#e7ecee] before:p-2 before:text-sm before:font-medium before:text-gray-500 before:opacity-0 before:shadow-xl before:transition-all before:duration-300 hover:before:opacity-100 md:before:-left-4;
+    }
+
+    .mobileHeaderLink {
+        @apply h-[40px] cursor-pointer rounded-md p-2 transition hover:bg-gray-300;
     }
 
     .headerIcon {
@@ -26,6 +38,6 @@
     }
 
     .tabPanel {
-        @apply sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 grid grid-cols-1 gap-8;
+        @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
     }
 }
