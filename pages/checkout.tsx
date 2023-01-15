@@ -68,7 +68,7 @@ export default function Checkout() {
             </Head>
 
             <Header />
-            <main className="mx-auto max-w-5xl pb-24">
+            <main className="relative mx-auto max-w-5xl pb-24">
                 <div className="px-5">
                     <h2 className="lg: my-4 text-3xl font-semibold lg:text-4xl">
                         {products.length > 0
@@ -88,7 +88,7 @@ export default function Checkout() {
                         {Object.entries(groupedProductsInCart).map(([key, products]) => (
                             <CheckoutProduct key={key} products={products} id={key} />
                         ))}
-                        <div className="my-12 mt-6 ml-auto max-w-3xl">
+                        <div className="my-12 mt-6 ml-auto">
                             <div className="divide-y divide-gray-300">
                                 <div className="pb-4">
                                     <div className="flex justify-between">
