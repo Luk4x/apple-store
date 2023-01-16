@@ -19,8 +19,9 @@
 <p align="center">
   <a href="#-apresentação-em-vídeo-do-projeto">Vídeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-etapas">Etapas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-páginas">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-páginas-e-rotas">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-demais-componentes">Componentes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-clonando-o-projeto">Clone</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-contato-dos-contribuintes">Contato</a>
@@ -39,7 +40,7 @@
 
 - [Typescript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
-- [Redux](https://redux.js.org/)
+- [Redux Toolkit](https://redux.js.org/)
 - [Stripe](https://stripe.com/en-br)
 - [ReactJS](https://pt-br.reactjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -57,14 +58,21 @@
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
+## 🗓️ Etapas
+
+> Novas etapas podem ser adicionadas!
+
+- Task: 🗹
+- Task: ☐
+
 ## 📝 Sobre
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
 A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
-E digo principalmente, pois esse projeto está em constante evolução, podendo ser conferida na sessão de [Etapas](#%EF%B8%8F-etapas).<br>
+E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de [Etapas](#%EF%B8%8F-etapas), podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.<br>
 
-Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu propósito com ele era me aprofundar mais em Next, Typescript, Redux e Tailwind.
+Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu propósito durante o seu desenvolvimento é me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
 ### 📄 Páginas e Rotas
 
@@ -111,13 +119,7 @@ Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e m
 <br/>
 
   - **sanity**: Esse é o arquivo de configurações do Sanity. Ele também exporta a `urlFor`, função que auxilia na exibição das imagens dos produtos da base de dados.
-
-## 🗓️ Etapas
-
-> Novas tarefas podem ser adicionadas!
-
-- Task: 🗹
-- Task: ☐
+  - **apple-store-database**: Essa é a base de dados do projeto, criada utilizando o Sanity.
 
 ## 📖 Clonando o Projeto
 
