@@ -78,20 +78,35 @@ Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e m
 
   - **pages/api/auth/[...nextauth]**: Esse é o arquivo de configurações globais do NextAuth.
   - **pages/api/checkout_sessions**: Essa rota é responsável por transformar os dados da compra recebidos no formato que o Stripe exige, e criar uma sessão no Stripe para o usuário. Exemplo de uso: **pages/checkout**.
-  - **pages/api/getCategories**: Essa rota é responsável por retornar as categories dos produtos da base de dados. Exemplo de uso: **pages/index**.
-  - **pages/api/getProducts**: Essa rota é responsável por retornar os produtos da base de dados. Exemplo de uso: **pages/index**.
+  - **pages/api/getCategories**: Essa rota é responsável por retornar as categories dos produtos da base de dados. Exemplo de uso: **utils/fetchCategories**.
+  - **pages/api/getProducts**: Essa rota é responsável por retornar os produtos da base de dados. Exemplo de uso: **utils/fetchProducts**.
   - **pages/api/getSession**: Essa rota é responsável por retornar uma sessão a partir do id recebido. Exemplo de uso: **utils/fetchLineProducts**.
 
 ### 📑 Demais Componentes
 
   - **pages/_app**: Nesse componente ficam configurações globais da aplicação, como os contextos do Redux e do NextAuth que envolvem toda a aplicação, estilos globais, e a renderização dos toasts.
-  - **_document**: Resumidamente, nesse componente ficam as configurações de SEO da aplicação.
+  - **pages/_document**: Resumidamente, nesse componente ficam as configurações de SEO da aplicação.
+
+  <br/>
+
   - **components/Button**: Esse componente é relativo ao botão reaproveitado periodicamente durante a aplicação.
   - **components/Cart**: Esse componente é relativo ao ícone de carrinho que aparece quando existe algum item no carrinho e o scroll está baixo de 400.
   - **components/CheckoutProduct**: Esse componente é relativo aos produtos mostrados na **pages/checkout**.
   - **components/Header**: Esse componente é relativo ao cabeçalho da aplicação.
   - **components/Product**: Esse componente é relativo aos produtos mostrados no **pages/index**.
-  - **redux/cartSlice**: Utilizando o Redux, nesse componente está a lógica usada para lidar com as ações a se tomar na interação do usuário em geral.
+
+  <br/>
+
+  - **redux/cartSlice**: Utilizando o Redux, nesse componente está a lógica usada para lidar com as ações de interação do usuário em relação ao sistema de shopping. Ele exporta funções de extrema importância, como `addToCart` e `removeFromCart` (que são autoexplicativas), e valores como `selectCartProducts` (total de produtos no carrinho), e dentre outros, que são usados periodicamente pelo projeto.
+  - **redux/store**: Esse é o arquivo de configurações do Redux.
+
+  <br/>
+
+  - **utils/api-helpers**: A ideia desse componente é a de agilizar e reutilizar determinados processos feitos na **pages/api**, componentizando-os nesse componenete. Por enquanto ele exporta apenas a `fetchPostJSON`, responsável por agilizar requisições POST.
+  - **utils/fetchCategories**: Esse componente reponsável por agilizar a busca pelas categorias dos produtos na base de dados.
+  - **utils/fetchProducts**: Esse componente reponsável por agilizar a busca pelos produtos na base de dados.
+  - **utils/fetchLineProducts**: Esse componente, trabalhando em conjunto com a **pages/api/getSession**, é responsável por retornar os produtos baseado no id enviado, e juntos eles realizam a verificação do id e podem retornar `404` caso esteja incorreto.
+  - **utils/get-stripejs**: Esse componente é responsavél por inicializar o Stripe, usando o Sigleton Pattern para não inicializá-lo mais de uma vez.
 
 ## 🗓️ Etapas
 
@@ -118,8 +133,8 @@ Estando agora na raiz do projeto, crie o arquivo `.env.local`, que deve conter a
 ```bash
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 NEXT_PUBLIC_SANITY_DATASET=production
-NEXT_PUBLIC_SANITY_PROJECT_ID=idDoSeuProjetoNoSanity
-SANITY_API_TOKEN=tokenDaAPIDoSeuProjetoNoSanity
+NEXT_PUBLIC_SANITY_PROJECT_ID=eg7o3xb7
+SANITY_API_TOKEN=skXfDbS2I0Wq6b3MKAK7Z4YufmzKEgyg2u1uu8z8g5CXJnRLdiG4v3EZ5mn73eKD6YZAnkPtAcfnQdXAwWUXq5njSXalAQB46i4G5YziAMuENoTMTTe2Atpr8Y3jMqwgE7Epb9RATNJE7fpZeOJhLkFbKhfEkkxwkNY9lLuKvmsVQKiPwwQ7
 
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=suaChavePublicavelNoStripe
 STRIPE_SECRET_KEY=suaChaveSecretaNoStripe
@@ -127,7 +142,7 @@ STRIPE_SECRET_KEY=suaChaveSecretaNoStripe
 GOOGLE_CLIENT_ID=seuIdGoogleCloud
 GOOGLE_CLIENT_SECRET=suaChaveSecretaGoogleCloud
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=suaChaveSecreta
+NEXTAUTH_SECRET=8d483308855e9b1f26f4076108879cbf
 ```
 
 Tendo as variáveis de ambiente configuradas:
@@ -139,6 +154,7 @@ Tendo as variáveis de ambiente configuradas:
 > npm install
 
 # Execute o projeto com:
+> npm run dev
 > cd ..
 > npm run dev
 
