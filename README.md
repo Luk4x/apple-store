@@ -61,10 +61,10 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
-A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.<br>
+A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
+Digo principalmente pois esse projeto está em constante evolução, podendo ser conferida na sessão de [Etapas](#etapas).<br>
 
-
-Está em constante evolução, aprendi e continuo aprendendo muito.
+Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu próposito com ele era me aprofundar mais em Next, Typescript, Redux e Tailwind.
 
 ### 📄 Páginas
 
@@ -73,6 +73,13 @@ Está em constante evolução, aprendi e continuo aprendendo muito.
 ### 📑 Demais Componentes
 
 
+
+## 🗓️ Etapas
+
+> Novas tarefas podem ser adicionadas!
+
+- Task: 🗹
+- Task: ☐
 
 ## 📖 Clonando o Projeto
 
