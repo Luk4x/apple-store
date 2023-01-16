@@ -43,7 +43,7 @@
 - [Stripe](https://stripe.com/en-br)
 - [ReactJS](https://pt-br.reactjs.org)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Next Auth](https://next-auth.js.org/)
+- [NextAuth](https://next-auth.js.org/)
 - [Sanity.io](https://www.sanity.io/)
 - [HeadlessUI](https://headlessui.com/)
 - [React Responsive](https://www.npmjs.com/package/react-responsive)
@@ -62,13 +62,25 @@
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
 A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
-Digo principalmente pois esse projeto está em constante evolução, podendo ser conferida na sessão de [Etapas](#etapas).<br>
+E digo principalmente, pois esse projeto está em constante evolução, podendo ser conferida na sessão de [Etapas](#%EF%B8%8F-etapas).<br>
 
-Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu próposito com ele era me aprofundar mais em Next, Typescript, Redux e Tailwind.
+Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu propósito com ele era me aprofundar mais em Next, Typescript, Redux e Tailwind.
 
-### 📄 Páginas
+### 📄 Páginas e Rotas
 
+#### A aplicação tem um total de 3 componentes de página, sendo eles:
 
+  - **pages/index**: Essa é a Home da aplicação, onde o usuário pode efetuar o LogIn/LogOut, e adicionar produtos ao carrinho. Os produtos são buscados da base de dados utilizando o conceito de SSR.
+  - **pages/checkout**: Essa é a página de revisão da compra, onde o usuário pode remover produtos do carrinho e seguir com o pagamento, sendo redirecionado para o ambiente de teste do Stripe - uma página de pagamento.
+  - **pages/success**: Após ter preenchido os dados e efetuado o pagamento na página do Stripe, o usuário será redirecionado para essa página, que é a de confirmação e agradecimento pela compra.
+ 
+#### A aplicação tem um total de 5 componentes de rota, sendo eles:
+
+  - **pages/api/auth/[...nextauth]**: Esse é o arquivo de configurações globais do NextAuth.
+  - **pages/api/checkout_sessions**: Essa rota é responsável por transformar os dados da compra recebidos no formato que o Stripe exige, e criar uma sessão no Stripe para o usuário. Exemplo de uso: **pages/checkout**.
+  - **pages/api/getCategories**: Essa rota é responsável por retornar as categories dos produtos da base de dados. Exemplo de uso: **pages/index**.
+  - **pages/api/getProducts**: Essa rota é responsável por retornar os produtos da base de dados. Exemplo de uso: **pages/index**.
+  - **pages/api/getSession**: Essa rota é responsável por retornar uma sessão a partir do id recebido. Exemplo de uso: **utils/fetchLineProducts**.
 
 ### 📑 Demais Componentes
 
