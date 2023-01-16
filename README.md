@@ -95,7 +95,7 @@ Feito isso, no terminal:
 > cd apple-store
 ```
 
-Estando agora na raiz do projeto, crie o arquivo .env.local, que deve conter as seguintes variáveis de ambiente:
+Estando agora na raiz do projeto, crie o arquivo `.env.local`, que deve conter as seguintes variáveis de ambiente:
 
 ```bash
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
@@ -103,7 +103,7 @@ NEXT_PUBLIC_SANITY_DATASET=production
 NEXT_PUBLIC_SANITY_PROJECT_ID=idDoSeuProjetoNoSanity
 SANITY_API_TOKEN=tokenDaAPIDoSeuProjetoNoSanity
 
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=suaChavePublicaNoStripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=suaChavePublicavelNoStripe
 STRIPE_SECRET_KEY=suaChaveSecretaNoStripe
 
 GOOGLE_CLIENT_ID=seuIdGoogleCloud
