@@ -11,7 +11,7 @@
   </tr>
 </table>
 
-![luk4x-repo-status](https://img.shields.io/badge/Status-Finished-lightgrey?style=for-the-badge&logo=headspace&logoColor=green&color=lightgrey)
+![luk4x-repo-status](https://img.shields.io/badge/status-developing-lightgrey?style=for-the-badge&logo=headspace&logoColor=yellow&color=lightgrey)
 ![luk4x-repo-license](https://img.shields.io/github/license/Luk4x/apple-store?style=for-the-badge&logo=unlicense&logoColor=lightgrey)
 # 🛍️ Apple Store Project
 
@@ -61,7 +61,10 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
+A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.<br>
 
+
+Está em constante evolução, aprendi e continuo aprendendo muito.
 
 ### 📄 Páginas
 
@@ -153,7 +156,7 @@ Tendo as variáveis de ambiente configuradas:
 </table>
 
 <p align="right">
-  <a href="%EF%B8%8F-apple-store-project">Voltar ao Topo</a>
+  <a href="#%EF%B8%8F-apple-store-project">Voltar ao Topo</a>
 </p>
 
 <!--
