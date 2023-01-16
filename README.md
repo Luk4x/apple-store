@@ -33,7 +33,7 @@
 </div>
 
 > **Caso o vídeo apresente algum erro, recarregue a página!**<br>
-> Acesse o projeto online **[AQUI](https://luk4x-login-flux.netlify.app/)**
+> Acesse o projeto online **[AQUI]()**
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -61,26 +61,15 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
-A aplicação se consiste num fluxo de autenticação completo, onde é possível criar uma conta, fazer LogIn e LogOut, atualizar os dados da conta, e redefinir a senha em caso de esquecimento, isso utilizando Firebase para armazenar os dados dos usuários e realizar todo o sistema de autenticação, e React para a interface.<br>
-A aplicação conta com as validações necessárias para que todos os erros sejam tratados, assim como mensagens de feedback para criar uma melhor experiência para o usuário, além de outras boas práticas relevantes para esse contexto de autenticação.<br>
+
 
 ### 📄 Páginas
 
-A aplicação tem um total de 5 componentes de páginas, sendo eles:
 
-  - **Home**: Essa é a página privada de perfil do usuário, contendo nela os dados do usuário juntamente com a possibilidade de alterá-los e fazer LogOut.
-  - **ForgotPassword**: Essa página é responsável por enviar um email de redefinição de senha para o usuário a partir do email inserido.
-  - **Login**: Essa página é responsável por logar o usuário a partir dos dados inseridos.
-  - **Register**: Essa página é responsável por cadastrar um usuário a partir dos dados inseridos.
-  - **UpdateProfile**: Essa página é responsável por possibilitar o usuário de alterar seus dados cadastrados.
 
 ### 📑 Demais Componentes
-  
-  - Os componentes **Button**, **Form** e **Input** são respectivamente os componentes dos *Botões*, *Formulários*, e *Inputs* que são reaproveitados periodicamente pela aplicação.
-  - **MyToast**: Esse componente se consiste numa forma de agilizar e padronizar os alertas que aparecem pela aplicação.
-  - **AuthContext**: Esse componente é responsável pela disseminação das informações dos usuários e funções de autenticação pela aplicação.
-  - **Routes**: Esse componente é responsável pela criação e administração das rotas da aplicação.
-  - **PrivateRoute**: Esse componente é responsável por privar uma rota, sendo usado nas rotas de */* e */update-profile*.
+
+
 
 ## 📖 Clonando o Projeto
 
@@ -117,8 +106,11 @@ Tendo as variáveis de ambiente configuradas:
 ```bash
 # Instale as dependências com:
 > npm install
+> cd apple-store-database
+> npm install
 
 # Execute o projeto com:
+> cd ..
 > npm run dev
 
 # Feito isso, você já poderá estar acessando o projeto em: http://localhost:3000
