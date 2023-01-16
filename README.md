@@ -29,7 +29,7 @@
 
 ## 📹 Apresentação em Vídeo do Projeto
 <div align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/211228214-445a84f4-5743-476c-887a-e536f1744f71.mp4" />
+  <video src="https://user-images.githubusercontent.com/86276393/212575676-5bdf0e59-e2d9-41e8-9019-a62f8aba4b91.mp4" />
 </div>
 
 > **Caso o vídeo apresente algum erro, recarregue a página!**<br>
@@ -37,15 +37,21 @@
 
 ## 🚀 Tecnologias Utilizadas
 
+- [Typescript](https://www.typescriptlang.org/)
+- [NextJS](https://nextjs.org/)
+- [Redux](https://redux.js.org/)
+- [Stripe](https://stripe.com/en-br)
 - [ReactJS](https://pt-br.reactjs.org)
-- [Firebase](https://firebase.google.com/)
-- [React Hook Form](https://react-hook-form.com/get-started/)
-- [Yup](https://github.com/jquense/yup)
-- [Styled Components](https://styled-components.com/docs)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Next Auth](https://next-auth.js.org/)
+- [Sanity.io](https://www.sanity.io/)
+- [HeadlessUI](https://headlessui.com/)
+- [React Responsive](https://www.npmjs.com/package/react-responsive)
 - [React Hot Toast](https://react-hot-toast.com/)
-- [React Router v6](https://reactrouter.com/en/main)
+- [React Currency Formatter](https://www.npmjs.com/package/react-currency-formatter)
+- [React use Scroll Position](https://www.npmjs.com/package/react-use-scroll-position)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Vite + SWC](https://vitejs.dev/)
+- [Random String](https://www.npmjs.com/package/random-string)
 - [NodeJS](https://nodejs.org)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -83,18 +89,39 @@ Feito isso, no terminal:
 
 ```bash
 # Clone esse repositório com:
-> git clone https://github.com/Luk4x/login-flux.git
+> git clone https://github.com/Luk4x/apple-store.git
 
 # Entre no repositório com:
-> cd login-flux
+> cd apple-store
+```
 
+Estando agora na raiz do projeto, crie o arquivo .env.local, que deve conter as seguintes variáveis de ambiente:
+
+```bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_PROJECT_ID=idDoSeuProjetoNoSanity
+SANITY_API_TOKEN=tokenDaAPIDoSeuProjetoNoSanity
+
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=suaChavePublicaNoStripe
+STRIPE_SECRET_KEY=suaChaveSecretaNoStripe
+
+GOOGLE_CLIENT_ID=seuIdGoogleCloud
+GOOGLE_CLIENT_SECRET=suaChaveSecretaGoogleCloud
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=suaChaveSecreta
+```
+
+Tendo as variáveis de ambiente configuradas:
+
+```bash
 # Instale as dependências com:
 > npm install
 
 # Execute o projeto com:
 > npm run dev
 
-# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://localhost:3000/ ou http://127.0.0.1:5173/)
+# Feito isso, você já poderá estar acessando o projeto em: http://localhost:3000
 ```
 
 ## 🤝 Contato dos Contribuintes
@@ -125,7 +152,7 @@ Feito isso, no terminal:
 | :placard: Vitrine.Dev | Lucas Maciel |
 | -------------  | --- |
 | :sparkles: Nome        | **🛍️ Apple Store**
-| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity, next-auth, headlessui, react hot toast, random string, react currency formatter, react responsive, react use scroll position, react icons, javascript, css, html
+| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity.io, next-auth, headlessui, react hot toast, random string, react currency formatter, react responsive, react use scroll position, react icons, javascript, css, html
 | :camera: Img         | <img src="https://user-images.githubusercontent.com/86276393/212569133-c845f016-df7f-41ee-a3a1-43bbbc2a6669.png#vitrinedev" alt="vitrine.dev thumb" width="100%"/>
 
 </details>
@@ -134,7 +161,7 @@ Feito isso, no terminal:
 </table>
 
 <p align="right">
-  <a href="#-login-flux-project">Voltar ao Topo</a>
+  <a href="%EF%B8%8F-apple-store-project">Voltar ao Topo</a>
 </p>
 
 <!--
