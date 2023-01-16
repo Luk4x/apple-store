@@ -84,7 +84,14 @@ Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e m
 
 ### 📑 Demais Componentes
 
-
+  - **pages/_app**: Nesse componente ficam configurações globais da aplicação, como os contextos do Redux e do NextAuth que envolvem toda a aplicação, estilos globais, e a renderização dos toasts.
+  - **_document**: Resumidamente, nesse componente ficam as configurações de SEO da aplicação.
+  - **components/Button**: Esse componente é relativo ao botão reaproveitado periodicamente durante a aplicação.
+  - **components/Cart**: Esse componente é relativo ao ícone de carrinho que aparece quando existe algum item no carrinho e o scroll está baixo de 400.
+  - **components/CheckoutProduct**: Esse componente é relativo aos produtos mostrados na **pages/checkout**.
+  - **components/Header**: Esse componente é relativo ao cabeçalho da aplicação.
+  - **components/Product**: Esse componente é relativo aos produtos mostrados no **pages/index**.
+  - **redux/cartSlice**: Utilizando o Redux, nesse componente está a lógica usada para lidar com as ações a se tomar na interação do usuário em geral.
 
 ## 🗓️ Etapas
 
