@@ -78,7 +78,7 @@ Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e m
 
   - **pages/api/auth/[...nextauth]**: Esse é o arquivo de configurações globais do NextAuth.
   - **pages/api/checkout_sessions**: Essa rota é responsável por transformar os dados da compra recebidos no formato que o Stripe exige, e criar uma sessão no Stripe para o usuário. Exemplo de uso: **pages/checkout**.
-  - **pages/api/getCategories**: Essa rota é responsável por retornar as categories dos produtos da base de dados. Exemplo de uso: **utils/fetchCategories**.
+  - **pages/api/getCategories**: Essa rota é responsável por retornar as categorias dos produtos da base de dados. Exemplo de uso: **utils/fetchCategories**.
   - **pages/api/getProducts**: Essa rota é responsável por retornar os produtos da base de dados. Exemplo de uso: **utils/fetchProducts**.
   - **pages/api/getSession**: Essa rota é responsável por retornar uma sessão a partir do id recebido. Exemplo de uso: **utils/fetchLineProducts**.
 
@@ -102,11 +102,15 @@ Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e m
 
   <br/>
 
-  - **utils/api-helpers**: A ideia desse componente é a de agilizar e reutilizar determinados processos feitos na **pages/api**, componentizando-os nesse componenete. Por enquanto ele exporta apenas a `fetchPostJSON`, responsável por agilizar requisições POST.
-  - **utils/fetchCategories**: Esse componente reponsável por agilizar a busca pelas categorias dos produtos na base de dados.
-  - **utils/fetchProducts**: Esse componente reponsável por agilizar a busca pelos produtos na base de dados.
+  - **utils/api-helpers**: A ideia desse componente é a de agilizar e reutilizar determinados processos feitos na **pages/api**, componentizando-os nesse componente. Por enquanto ele exporta apenas a `fetchPostJSON`, responsável por agilizar requisições POST.
+  - **utils/fetchCategories**: Esse componente responsável por agilizar a busca pelas categorias dos produtos na base de dados.
+  - **utils/fetchProducts**: Esse componente responsável por agilizar a busca pelos produtos na base de dados.
   - **utils/fetchLineProducts**: Esse componente, trabalhando em conjunto com a **pages/api/getSession**, é responsável por retornar os produtos baseado no id enviado, e juntos eles realizam a verificação do id e podem retornar `404` caso esteja incorreto.
-  - **utils/get-stripejs**: Esse componente é responsavél por inicializar o Stripe, usando o Sigleton Pattern para não inicializá-lo mais de uma vez.
+  - **utils/get-stripejs**: Esse componente é responsável por inicializar o Stripe, usando o `Sigleton Pattern` para não inicializá-lo mais de uma vez.
+
+<br/>
+
+  - **sanity**: Esse é o arquivo de configurações do Sanity. Ele também exporta a `urlFor`, função que auxilia na exibição das imagens dos produtos da base de dados.
 
 ## 🗓️ Etapas
 
