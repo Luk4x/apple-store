@@ -100,7 +100,7 @@
       🗹
     </td>
     <td>
-      
+      Criando a base de dados com o <b>Sanity</b>
     </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@
       🗹
     </td>
     <td>
-      
+      Desenvolvendo o <code>components/Header</code>
     </td>
   </tr>
   <tr>
@@ -116,7 +116,7 @@
       🗹
     </td>
     <td>
-      
+      Desenvolvendo o <code>components/Button</code> inspirado no <a href="https://devdojo.com/tailwindcss/buttons">DevDojo</a>
     </td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@
       🗹
     </td>
     <td>
-      
+      Finalizando a estrutura e estilo da <code>pages/index</code>
     </td>
   </tr>
   <tr>
@@ -132,7 +132,7 @@
       🗹
     </td>
     <td>
-      
+      Configurando o painel de administração da base de dados
     </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@
       🗹
     </td>
     <td>
-      
+      Preenchendo a base de dados
     </td>
   </tr>
   <tr>
@@ -148,7 +148,7 @@
       🗹
     </td>
     <td>
-      
+      Desenvolvendo a <code>pages/api/getCategories</code> e <code>pages/api/getProducts</code>
     </td>
   </tr>
   <tr>
@@ -156,7 +156,7 @@
       🗹
     </td>
     <td>
-      
+      Desenvolvendo a <code>utils/fetchCategories</code> e <code>utils/fetchProducts</code> 
     </td>
   </tr>
   <tr>
