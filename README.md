@@ -62,17 +62,8 @@
 
 > Novas etapas podem ser adicionadas!
 
-<table align="center" height="100%">
+<table align="center" height="550px">
   <tr>
-    <td>
-      🗹
-    </td>
-    <td>
-      Definindo a estrutura base e instalando dependências
-    </td>
-    <td>
-      |
-    </td>
     <td>
       🗹
     </td>
@@ -362,7 +353,7 @@
   </tr>
   <tr>
     <td>
-      🗹
+      ☐
     </td>
     <td>
       Melhorando o <b>SEO</b> do projeto
@@ -370,7 +361,7 @@
   </tr>
   <tr>
     <td>
-      🗹
+      ☐
     </td>
     <td>
       Fazendo deploy do projeto na <a href="https://vercel.com">Vercel</a>
@@ -381,7 +372,7 @@
       ☐
     </td>
     <td>
-      Implementando os toasts
+      Dividir branches de Produção e Desenvolvimento
     </td>
   </tr>
   <tr>
@@ -389,7 +380,78 @@
       ☐
     </td>
     <td>
-      Implementando os toasts
+      Desenvolvimento Cross-Browser
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Otimizar performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, remove currency formatter --> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Desenvolver busca de CEP na <code>pages/checkout</code> <!-- cosume cep api + headlessui combobox --> 
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Armazenar os produtos do carrinho em local storage
+    </td>
+  </tr><tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Desenvolver sistema de busca <!-- header search icon -->
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Desenvolver página para os produtos
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Adicionar novos produtos e categorias <!-- airpods, tv?, acessórios? -->
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Clonar da páginas da Apple <!-- explore => loja, suporte, só na apple => só na apple + apple tv 4k + apple tv+ -->
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Criar página de produtos parceiros consumindo uma API
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Migrar do Tailwind para o Styled Components se/quando necessário
     </td>
   </tr>
 </table>
