@@ -62,7 +62,137 @@
 
 > Novas etapas podem ser adicionadas!
 
-- Task: 🗹
+<table>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Definindo a estrutura base e instalando dependências
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Definindo estilos globais
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Procurando boas fotos de mostruário
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo a base da <code>pages/index</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+</table>
+
 - Task: ☐
 
 ## 📝 Sobre
@@ -72,54 +202,54 @@
 A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
 E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de [Etapas](#%EF%B8%8F-etapas), podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.<br>
 
-Aprendi e continuo aprendendo muito durante o desenvolvimento desse projeto, e meu propósito durante o seu desenvolvimento é me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
+Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e meu propósito durante o seu desenvolvimento é me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
 ### 📄 Páginas e Rotas
 
 #### A aplicação tem um total de 3 componentes de página, sendo eles:
 
-  - **pages/index**: Essa é a Home da aplicação, onde o usuário pode efetuar o LogIn/LogOut, e adicionar produtos ao carrinho. Os produtos são buscados da base de dados utilizando o conceito de SSR.
-  - **pages/checkout**: Essa é a página de revisão da compra, onde o usuário pode remover produtos do carrinho e seguir com o pagamento, sendo redirecionado para o ambiente de teste do Stripe - uma página de pagamento.
-  - **pages/success**: Após ter preenchido os dados e efetuado o pagamento na página do Stripe, o usuário será redirecionado para essa página, que é a de confirmação e agradecimento pela compra.
+  - `pages/index`: Essa é a Home da aplicação, onde o usuário pode efetuar o LogIn/LogOut, e adicionar produtos ao carrinho. Os produtos são buscados da base de dados utilizando o conceito de **SSR**.
+  - `pages/checkout`: Essa é a página de revisão da compra, onde o usuário pode remover produtos do carrinho e seguir com o pagamento, sendo redirecionado para o ambiente de teste do Stripe - uma página de pagamento.
+  - `pages/success`: Após ter preenchido os dados e efetuado o pagamento na página do Stripe, o usuário será redirecionado para essa página, que é a de confirmação e agradecimento pela compra.
  
 #### A aplicação tem um total de 5 componentes de rota, sendo eles:
 
-  - **pages/api/auth/[...nextauth]**: Esse é o arquivo de configurações globais do NextAuth.
-  - **pages/api/checkout_sessions**: Essa rota é responsável por transformar os dados da compra recebidos no formato que o Stripe exige, e criar uma sessão no Stripe para o usuário. Exemplo de uso: **pages/checkout**.
-  - **pages/api/getCategories**: Essa rota é responsável por retornar as categorias dos produtos da base de dados. Exemplo de uso: **utils/fetchCategories**.
-  - **pages/api/getProducts**: Essa rota é responsável por retornar os produtos da base de dados. Exemplo de uso: **utils/fetchProducts**.
-  - **pages/api/getSession**: Essa rota é responsável por retornar uma sessão a partir do id recebido. Exemplo de uso: **utils/fetchLineProducts**.
+  - `pages/api/auth/[...nextauth]`: Esse é o arquivo de configurações globais do NextAuth.
+  - `pages/api/checkout_sessions`: Essa rota é responsável por transformar os dados da compra recebidos no formato que o Stripe exige, e criar uma sessão no Stripe para o usuário. _Exemplo de uso:_ `pages/checkout`.
+  - `pages/api/getCategories`: Essa rota é responsável por retornar as categorias dos produtos da base de dados. _Exemplo de uso:_ `utils/fetchCategories`.
+  - `pages/api/getProducts`: Essa rota é responsável por retornar os produtos da base de dados. _Exemplo de uso:_ `utils/fetchProducts`.
+  - `pages/api/getSession`: Essa rota é responsável por retornar uma sessão a partir do id recebido. _Exemplo de uso:_ `utils/fetchLineProducts`.
 
 ### 📑 Demais Componentes
 
-  - **pages/_app**: Nesse componente ficam configurações globais da aplicação, como os contextos do Redux e do NextAuth que envolvem toda a aplicação, estilos globais, e a renderização dos toasts.
-  - **pages/_document**: Resumidamente, nesse componente ficam as configurações de SEO da aplicação.
+  - `pages/_app`: Nesse componente ficam configurações globais da aplicação, como os contextos do Redux e do NextAuth que envolvem toda a aplicação, estilos globais, e a renderização dos toasts.
+  - `pages/_document`: Resumidamente, nesse componente ficam as configurações de **SEO** da aplicação.
 
   <br/>
 
-  - **components/Button**: Esse componente é relativo ao botão reaproveitado periodicamente durante a aplicação.
-  - **components/Cart**: Esse componente é relativo ao ícone de carrinho que aparece quando existe algum item no carrinho e o scroll está baixo de 400.
-  - **components/CheckoutProduct**: Esse componente é relativo aos produtos mostrados na **pages/checkout**.
-  - **components/Header**: Esse componente é relativo ao cabeçalho da aplicação.
-  - **components/Product**: Esse componente é relativo aos produtos mostrados no **pages/index**.
+  - `components/Button`: Esse componente é relativo ao botão reaproveitado periodicamente durante a aplicação.
+  - `components/Cart`: Esse componente é relativo ao ícone de carrinho que aparece quando existe algum item no carrinho e o scroll está baixo de 400.
+  - `components/CheckoutProduct`: Esse componente é relativo aos produtos mostrados na `pages/checkout`.
+  - `components/Header`: Esse componente é relativo ao cabeçalho da aplicação.
+  - `components/Product`: Esse componente é relativo aos produtos mostrados no `pages/index`.
 
   <br/>
 
-  - **redux/cartSlice**: Utilizando o Redux, nesse componente está a lógica usada para lidar com as ações de interação do usuário em relação ao sistema de shopping. Ele exporta funções de extrema importância, como `addToCart` e `removeFromCart` (que são autoexplicativas), e valores como `selectCartProducts` (total de produtos no carrinho), e dentre outros, que são usados periodicamente pelo projeto.
-  - **redux/store**: Esse é o arquivo de configurações do Redux.
+  - `redux/cartSlice`: Utilizando o Redux, nesse componente está a lógica usada para lidar com as ações de interação do usuário em relação ao sistema de shopping. Ele exporta funções de extrema importância, como `addToCart` e `removeFromCart` (que são autoexplicativas), e valores como `selectCartProducts` (total de produtos no carrinho), e dentre outros, que são usados periodicamente pelo projeto.
+  - `redux/store`: Esse é o arquivo de configurações do Redux.
 
   <br/>
 
-  - **utils/api-helpers**: A ideia desse componente é a de agilizar e reutilizar determinados processos feitos na **pages/api**, componentizando-os nesse componente. Por enquanto ele exporta apenas a `fetchPostJSON`, responsável por agilizar requisições POST.
-  - **utils/fetchCategories**: Esse componente responsável por agilizar a busca pelas categorias dos produtos na base de dados.
-  - **utils/fetchProducts**: Esse componente responsável por agilizar a busca pelos produtos na base de dados.
-  - **utils/fetchLineProducts**: Esse componente, trabalhando em conjunto com a **pages/api/getSession**, é responsável por retornar os produtos baseado no id enviado, e juntos eles realizam a verificação do id e podem retornar `404` caso esteja incorreto.
-  - **utils/get-stripejs**: Esse componente é responsável por inicializar o Stripe, usando o `Sigleton Pattern` para não inicializá-lo mais de uma vez.
+  - `utils/api-helpers`: A ideia desse componente é a de agilizar e reutilizar determinados processos feitos na `pages/api`, componentizando-os nesse componente. Por enquanto ele exporta apenas a `fetchPostJSON`, responsável por agilizar requisições POST.
+  - `utils/fetchCategories`: Esse componente responsável por agilizar a busca pelas categorias dos produtos na base de dados.
+  - `utils/fetchProducts`: Esse componente responsável por agilizar a busca pelos produtos na base de dados.
+  - `utils/fetchLineProducts`: Esse componente, trabalhando em conjunto com a `pages/api/getSession`, é responsável por retornar os produtos baseado no id enviado, e juntos eles realizam a verificação do id e podem retornar 404 caso esteja incorreto.
+  - `utils/get-stripejs`: Esse componente é responsável por inicializar o Stripe, usando o **Sigleton Pattern** para não inicializá-lo mais de uma vez.
 
 <br/>
 
-  - **sanity**: Esse é o arquivo de configurações do Sanity. Ele também exporta a `urlFor`, função que auxilia na exibição das imagens dos produtos da base de dados.
-  - **apple-store-database**: Essa é a base de dados do projeto, criada utilizando o Sanity.
+  - `sanity`: Esse é o arquivo de configurações do Sanity. Ele também exporta a `urlFor`, função que auxilia na exibição das imagens dos produtos da base de dados.
+  - `apple-store-database`: Essa é a base de dados do projeto, criada utilizando o Sanity.
 
 ## 📖 Clonando o Projeto
 
