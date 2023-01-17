@@ -62,7 +62,8 @@
 
 > Novas etapas podem ser adicionadas!
 
-<table>
+<img align="right" height="300px" src="https://user-images.githubusercontent.com/86276393/212905427-ddae4d6b-05c3-40f9-b80a-352113e385c4.png" alt="list icon" />
+<table height="550px">
   <tr>
     <td>
       🗹
@@ -100,7 +101,7 @@
       🗹
     </td>
     <td>
-      Criando a base de dados com o <b>Sanity</b>
+      Criação e confuguração básica da base de dados com o <b>Sanity</b>
     </td>
   </tr>
   <tr>
@@ -164,7 +165,7 @@
       🗹
     </td>
     <td>
-      
+      Desenvolvendo o <code>components/Product</code>
     </td>
   </tr>
   <tr>
@@ -172,7 +173,7 @@
       🗹
     </td>
     <td>
-      
+      Buscando e exibindo os produtos da base de dados via <b>SSR</b>
     </td>
   </tr>
   <tr>
@@ -180,7 +181,7 @@
       🗹
     </td>
     <td>
-      
+      Implementando o <b>Redux</b>
     </td>
   </tr>
   <tr>
@@ -188,12 +189,194 @@
       🗹
     </td>
     <td>
-      
+      Implementando os toasts
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo o <code>components/Cart</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo a estrutura e estilo da <code>pages/checkout</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo o <code>components/CheckoutProduct</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Agrupando produtos duplicados na <code>pages/checkout</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Implementando o <b>Stripe</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo o <code>utils/get-stripejs</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo o <code>utils/api-helpers</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo a <code>pages/api/checkout_sessions</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo a estrutura e estilo da <code>pages/success</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvendo a <code>pages/api/getSession</code> e a <code>utils/fetchLineProducts</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Finalizando a <code>pages/success</code> obtendo os dados via <code>SSR</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Implementando o <b>NextAuth</b> e criando o <code>pages/api/auth/[...nextauth]</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Criando projeto na <b>Google Cloud</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Implementando o <b>NextAuth</b> no <b>Sanity</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Fazendo deploy da base de dados
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Otimizando as imagens do projeto
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Mudando do <a href="https://heroicons.com/">Hero Icons</a> para o <a href="https://react-icons.github.io/react-icons/">React Icons</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Melhorando o design e responsividade da <code>pages/index</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Melhorando responsividade da <code>pages/checkout</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Criando a lisença e desenvolvendo o README do projeto
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Melhorando o <b>SEO</b> do projeto
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Fazendo deploy do projeto na <a href="https://vercel.com">Vercel</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Implementando os toasts
     </td>
   </tr>
 </table>
-
-- Task: ☐
 
 ## 📝 Sobre
 
