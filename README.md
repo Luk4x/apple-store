@@ -38,27 +38,7 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-- [Typescript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Redux Toolkit](https://redux.js.org/)
-- [Stripe](https://stripe.com/en-br)
-- [ReactJS](https://pt-br.reactjs.org)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [NextAuth](https://next-auth.js.org/)
-- [Sanity.io](https://www.sanity.io/)
-- [HeadlessUI](https://headlessui.com/)
-- [React Responsive](https://www.npmjs.com/package/react-responsive)
-- [React Hot Toast](https://react-hot-toast.com/)
-- [React Currency Formatter](https://www.npmjs.com/package/react-currency-formatter)
-- [React use Scroll Position](https://www.npmjs.com/package/react-use-scroll-position)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Random String](https://www.npmjs.com/package/random-string)
-- [NodeJS](https://nodejs.org)
-- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
-<table align="center" height="267px">
+<table align="center">
   <tr>
     <td align="center">
       <a href="https://www.typescriptlang.org/">
@@ -123,138 +103,138 @@
   </tr>
     <tr>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=styledcomponents" width="60px" alt="Styled Components icon"/><br>
-      <sub>
-        <b>
-          <pre>Styled<br>Components</pre>
-        </b>
-      </sub>
+      <a href="https://next-auth.js.org/">
+        <img src="https://user-images.githubusercontent.com/86276393/212922355-e38adb95-9e96-4970-b934-e8ac6c9bd3c9.png" width="60px" alt="NextAuth icon"/><br>
+        <sub>
+          <b>
+            <pre>NextAuth</pre>
+          </b>
+        </sub>
+      </a>
     </td>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=sass" width="65px" alt="Sass icon"/><br>
-      <sub>
-        <b>
-          <pre>Sass</pre>
-        </b>
-      </sub>
+      <a href="https://www.sanity.io/">
+        <img src="https://user-images.githubusercontent.com/86276393/212923447-c70352c9-540b-4063-8279-880ad2c164e2.png" height="65px" alt="Sanity icon"/><br>
+        <sub>
+          <b>
+            <pre>Sanity.io</pre>
+          </b>
+        </sub>
+      </a>
     </td>
     <td align="center">
-      <img src="https://user-images.githubusercontent.com/86276393/177149370-01f7c4a4-9763-478f-938c-ec3d4e7c76c5.png" width="65px" alt="Axios icon"/><br>
-      <sub>
-        <b>
-          <pre>&ensp;Axios&ensp;</pre>
-        </b>
-      </sub>
+      <a href="https://headlessui.com/">
+        <img src="https://user-images.githubusercontent.com/86276393/212924197-eb12c9c9-3803-4470-897a-bdf8f9976f97.png" height="65px" alt="HeadlessUI icon"/><br>
+        <sub>
+          <b>
+            <pre>HeadlessUI</pre>
+          </b>
+        </sub>
+      </a>
     </td>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=nodejs" width="65px" alt="NodeJS icon"/><br>
-      <sub>
-        <b>
-          <pre>NodeJS</pre>
-        </b>
-      </sub>
+      <a href="https://www.npmjs.com/package/react-responsive/">
+        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
+        <sub>
+          <b>
+            <pre>React Responsive</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://react-hot-toast.com/">
+        <img src="https://user-images.githubusercontent.com/86276393/212926924-2b88be96-9c4d-40ed-8459-0485a5e9ecfb.png" height="65px" alt="React Hot Toast icon"/><br>
+        <sub>
+          <b>
+            <pre>React Hot<br/>Toast</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.npmjs.com/package/react-currency-formatter/">
+        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
+        <sub>
+          <b>
+            <pre>React Currency<br/>Formatter</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+   <td align="center">
+      <a href="https://www.npmjs.com/package/react-use-scroll-position/">
+        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
+        <sub>
+          <b>
+            <pre>React use<br/>Scroll Position</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://react-icons.github.io/react-icons/">
+        <img src="https://user-images.githubusercontent.com/86276393/212928845-43fc02b7-bedb-4fb3-aed4-411a8e892920.png" height="65px" alt="React Icons icon"/><br>
+        <sub>
+          <b>
+            <pre>React Icons</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.npmjs.com/package/random-string/">
+        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
+        <sub>
+          <b>
+            <pre>Random String</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://nodejs.org/">
+        <img src="https://skillicons.dev/icons?i=nodejs" height="65px" alt="NodeJS icon"/><br>
+        <sub>
+          <b>
+            <pre>NodeJS</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
+        <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
+        <sub>
+          <b>
+            <pre>Javascript</pre>
+          </b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
+        <img src="https://skillicons.dev/icons?i=css" width="65px" alt="CSS3 icon"/><br>
+        <sub>
+          <b>
+            <pre>CSS3</pre>
+          </b>
+        </sub>
+      </a>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://skillicons.dev/icons?i=express" width="65px" alt="Express icon"/><br>
-      <sub>
-        <b>
-          <pre>Express</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=regex" width="65px" alt="Regex icon"/><br>
-      <sub>
-        <b>
-          <pre>Regex</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/86276393/177148580-f21f8f32-113c-499c-8c4d-f03412137f82.svg" width="65px" alt="Insomnia icon"/><br>
-      <sub>
-        <b>
-          <pre>Insomnia</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=react" width="65px" alt="React icon"/><br>
-      <sub>
-        <b>
-          <pre>React<br>Native</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=jquery" width="65px" alt="JQuery icon"/><br>
-      <sub>
-        <b>
-          <pre>JQuery</pre>
-        </b>
-      </sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
-      <sub>
-        <b>
-          <pre>Javascript</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=css" width="65px" alt="CSS3 icon"/><br>
-      <sub>
-        <b>
-          <pre>CSS3</pre>
-        </b>
-      </sub>
-    </td>
-        <td align="center">
-      <img src="https://skillicons.dev/icons?i=html" width="65px" alt="HTML5 icon"/><br>
-      <sub>
-        <b>
-          <pre>HTML5</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center" width="100px;">
-      <img src="https://skillicons.dev/icons?i=git" width="65px" alt="Git icon"/><br>
-      <sub>
-        <b>
-          <pre>Git</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=bash" width="65px" alt="bash icon"/><br>
-      <sub>
-        <b>
-          <pre>Terminal</pre>
-        </b>
-      </sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=vscode" width="65px" alt="visual studio code icon"/><br>
-      <sub>
-        <b>
-          <pre>VSCode</pre>
-        </b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/86276393/205502680-8c4634eb-5032-446c-a5ff-d669a0fa787c.png" width="80px" alt="Linux and Windows icon"/><br>
-      <sub>
-        <b>
-          <pre>Linux /<br>Windows</pre>
-        </b>
-      </sub>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">
+        <img src="https://skillicons.dev/icons?i=html" width="65px" alt="HTML5 icon"/><br>
+        <sub>
+          <b>
+            <pre>HTML5</pre>
+          </b>
+        </sub>
+      </a>
     </td>
   </tr>
 </table>
