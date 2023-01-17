@@ -251,7 +251,7 @@
       🗹
     </td>
     <td>
-      Definição da estrutura base e instalando dependências
+      Definição da estrutura base e instalação de dependências
     </td>
   </tr>
   <tr>
@@ -627,11 +627,11 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
-<img align="right" src="https://user-images.githubusercontent.com/86276393/212959080-e7945cf3-31a5-44b2-a7c0-d614ef1bb25f.png" alt="list icon" />
-A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
-E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.<br>
-
-Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e meu propósito durante o seu desenvolvimento é me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
+<img align="right" src="https://user-images.githubusercontent.com/86276393/212980660-edc0babb-f014-439f-b823-4a4e9ece7d45.png" alt="list icon" />
+A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.
+E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
+<br/><br/>
+Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e tenho o objetivo de me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
 ### 📄 Páginas e Rotas
 
