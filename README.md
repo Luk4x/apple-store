@@ -38,6 +38,8 @@
 
 ## 🚀 Tecnologias Utilizadas
 
+> 19 tecnologias foram utilizadas durante o desenvolvimento do projeto
+
 <table align="center">
   <tr>
     <td align="center">
@@ -249,7 +251,7 @@
       🗹
     </td>
     <td>
-      Definindo a estrutura base e instalando dependências
+      Definição da estrutura base e instalando dependências
     </td>
   </tr>
   <tr>
@@ -257,7 +259,7 @@
       🗹
     </td>
     <td>
-      Definindo estilos globais
+       Definição de estilos globais
     </td>
   </tr>
   <tr>
@@ -265,7 +267,7 @@
       🗹
     </td>
     <td>
-      Procurando boas fotos de mostruário
+      Busca por boas fotos de mostruário
     </td>
   </tr>
   <tr>
@@ -273,7 +275,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a base da <code>pages/index</code>
+      Desenvolvimento da base da <code>pages/index</code>
     </td>
   </tr>
   <tr>
@@ -281,7 +283,7 @@
       🗹
     </td>
     <td>
-      Criação e confuguração básica da base de dados com o <b>Sanity</b>
+      Criação e configuração básica da base de dados com o <b>Sanity</b>
     </td>
   </tr>
   <tr>
@@ -289,7 +291,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>components/Header</code>
+      Desenvolvimento do <code>components/Header</code>
     </td>
   </tr>
   <tr>
@@ -297,7 +299,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>components/Button</code> inspirado no <a href="https://devdojo.com/tailwindcss/buttons">DevDojo</a>
+      Desenvolvimento do <code>components/Button</code> inspirado no <a href="https://devdojo.com/tailwindcss/buttons">DevDojo</a>
     </td>
   </tr>
   <tr>
@@ -305,7 +307,7 @@
       🗹
     </td>
     <td>
-      Finalizando a estrutura e estilo da <code>pages/index</code>
+      Finalização da estrutura e estilo da <code>pages/index</code>
     </td>
   </tr>
   <tr>
@@ -313,7 +315,7 @@
       🗹
     </td>
     <td>
-      Configurando o painel de administração da base de dados
+      Configuração do painel de administração da base de dados
     </td>
   </tr>
   <tr>
@@ -321,7 +323,7 @@
       🗹
     </td>
     <td>
-      Preenchendo a base de dados
+      Preenchimento da base de dados
     </td>
   </tr>
   <tr>
@@ -329,7 +331,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a <code>pages/api/getCategories</code> e <code>pages/api/getProducts</code>
+      Desenvolvimento da <code>pages/api/getCategories</code> e <code>pages/api/getProducts</code>
     </td>
   </tr>
   <tr>
@@ -337,7 +339,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a <code>utils/fetchCategories</code> e <code>utils/fetchProducts</code> 
+      Desenvolvimento da <code>utils/fetchCategories</code> e <code>utils/fetchProducts</code> 
     </td>
   </tr>
   <tr>
@@ -345,7 +347,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>components/Product</code>
+      Desenvolvimento do <code>components/Product</code>
     </td>
   </tr>
   <tr>
@@ -353,7 +355,7 @@
       🗹
     </td>
     <td>
-      Buscando e exibindo os produtos da base de dados via <b>SSR</b>
+      Busca dos produtos da base de dados via <b>SSR</b>
     </td>
   </tr>
   <tr>
@@ -361,7 +363,7 @@
       🗹
     </td>
     <td>
-      Implementando o <b>Redux</b>
+      Implementação do <b>Redux</b>
     </td>
   </tr>
   <tr>
@@ -369,7 +371,7 @@
       🗹
     </td>
     <td>
-      Implementando os toasts
+      Implementação dos toasts
     </td>
   </tr>
   <tr>
@@ -377,7 +379,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>components/Cart</code>
+      Desenvolvimento do <code>components/Cart</code>
     </td>
   </tr>
   <tr>
@@ -385,7 +387,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a estrutura e estilo da <code>pages/checkout</code>
+      Desenvolvimento da estrutura e estilo da <code>pages/checkout</code>
     </td>
   </tr>
   <tr>
@@ -393,7 +395,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>components/CheckoutProduct</code>
+      Desenvolvimento do <code>components/CheckoutProduct</code>
     </td>
   </tr>
   <tr>
@@ -401,7 +403,7 @@
       🗹
     </td>
     <td>
-      Agrupando produtos duplicados na <code>pages/checkout</code>
+      Agrupamento dos produtos duplicados na <code>pages/checkout</code>
     </td>
   </tr>
   <tr>
@@ -409,7 +411,7 @@
       🗹
     </td>
     <td>
-      Implementando o <b>Stripe</b>
+      Implementação do <b>Stripe</b>
     </td>
   </tr>
   <tr>
@@ -417,7 +419,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>utils/get-stripejs</code>
+      Desenvolvimento do <code>utils/get-stripejs</code> e <code>utils/api-helpers</code>
     </td>
   </tr>
   <tr>
@@ -425,7 +427,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo o <code>utils/api-helpers</code>
+      Desenvolvimento da <code>pages/api/checkout_sessions</code>
     </td>
   </tr>
   <tr>
@@ -433,7 +435,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a <code>pages/api/checkout_sessions</code>
+      Desenvolvimento da estrutura e estilo da <code>pages/success</code>
     </td>
   </tr>
   <tr>
@@ -441,7 +443,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a estrutura e estilo da <code>pages/success</code>
+      Desenvolvimento da <code>pages/api/getSession</code> e <code>utils/fetchLineProducts</code>
     </td>
   </tr>
   <tr>
@@ -449,7 +451,7 @@
       🗹
     </td>
     <td>
-      Desenvolvendo a <code>pages/api/getSession</code> e a <code>utils/fetchLineProducts</code>
+      Finalização da <code>pages/success</code> obtendo os dados via <code>SSR</code>
     </td>
   </tr>
   <tr>
@@ -457,7 +459,7 @@
       🗹
     </td>
     <td>
-      Finalizando a <code>pages/success</code> obtendo os dados via <code>SSR</code>
+      Implementação do <b>NextAuth</b> e criação do <code>pages/api/auth/[...nextauth]</code>
     </td>
   </tr>
   <tr>
@@ -465,7 +467,7 @@
       🗹
     </td>
     <td>
-      Implementando o <b>NextAuth</b> e criando o <code>pages/api/auth/[...nextauth]</code>
+      Criação do projeto na <b>Google Cloud</b>
     </td>
   </tr>
   <tr>
@@ -473,7 +475,7 @@
       🗹
     </td>
     <td>
-      Criando projeto na <b>Google Cloud</b>
+      Implementação do <b>NextAuth</b> no <b>Sanity</b>
     </td>
   </tr>
   <tr>
@@ -481,7 +483,7 @@
       🗹
     </td>
     <td>
-      Implementando o <b>NextAuth</b> no <b>Sanity</b>
+      Deploy da base de dados
     </td>
   </tr>
   <tr>
@@ -489,7 +491,7 @@
       🗹
     </td>
     <td>
-      Fazendo deploy da base de dados
+      Otimização das imagens do projeto
     </td>
   </tr>
   <tr>
@@ -497,7 +499,7 @@
       🗹
     </td>
     <td>
-      Otimizando as imagens do projeto
+      Mudança do <a href="https://heroicons.com/">Hero Icons</a> para o <a href="https://react-icons.github.io/react-icons/">React Icons</a>
     </td>
   </tr>
   <tr>
@@ -505,7 +507,7 @@
       🗹
     </td>
     <td>
-      Mudando do <a href="https://heroicons.com/">Hero Icons</a> para o <a href="https://react-icons.github.io/react-icons/">React Icons</a>
+      Melhoria do design e responsividade da <code>pages/index</code>
     </td>
   </tr>
   <tr>
@@ -513,7 +515,7 @@
       🗹
     </td>
     <td>
-      Melhorando o design e responsividade da <code>pages/index</code>
+      Melhoria da responsividade da <code>pages/checkout</code>
     </td>
   </tr>
   <tr>
@@ -521,15 +523,7 @@
       🗹
     </td>
     <td>
-      Melhorando responsividade da <code>pages/checkout</code>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      🗹
-    </td>
-    <td>
-      Criando a lisença e desenvolvendo o README do projeto
+      Criação da lisença e desenvolvimento do README do projeto
     </td>
   </tr>
   <tr>
@@ -537,7 +531,7 @@
       ☐
     </td>
     <td>
-      Melhorando o <b>SEO</b> do projeto
+      Melhoria do <b>SEO</b> do projeto
     </td>
   </tr>
   <tr>
@@ -545,7 +539,7 @@
       ☐
     </td>
     <td>
-      Fazendo deploy do projeto na <a href="https://vercel.com">Vercel</a>
+      Deploy do projeto na <a href="https://vercel.com">Vercel</a>
     </td>
   </tr>
   <tr>
@@ -553,7 +547,7 @@
       ☐
     </td>
     <td>
-      Dividir branches de Produção e Desenvolvimento
+      Divisão de branches de Produção e Desenvolvimento
     </td>
   </tr>
   <tr>
@@ -569,7 +563,7 @@
       ☐
     </td>
     <td>
-      Otimizar performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, remove currency formatter --> 
+      Otimização da performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, remove currency formatter --> 
     </td>
   </tr>
   <tr>
@@ -577,7 +571,7 @@
       ☐
     </td>
     <td>
-      Desenvolver busca de CEP na <code>pages/checkout</code> <!-- cosume cep api + headlessui combobox --> 
+      Desenvolvimento da busca de CEP na <code>pages/checkout</code> <!-- cosume cep api + headlessui combobox --> 
     </td>
   </tr>
   <tr>
@@ -585,14 +579,14 @@
       ☐
     </td>
     <td>
-      Armazenar os produtos do carrinho em local storage
+      Armazenamento os produtos do carrinho em <b>Local Storage</b>
     </td>
   </tr><tr>
     <td>
       ☐
     </td>
     <td>
-      Desenvolver sistema de busca <!-- header search icon -->
+      Desenvolvimento do sistema de busca <!-- header search icon -->
     </td>
   </tr>
   <tr>
@@ -600,7 +594,7 @@
       ☐
     </td>
     <td>
-      Desenvolver página para os produtos
+      Desenvolvimento da página para os produtos
     </td>
   </tr>
   <tr>
@@ -608,7 +602,7 @@
       ☐
     </td>
     <td>
-      Adicionar novos produtos e categorias <!-- airpods, tv?, acessórios? -->
+      Adição de novos produtos e categorias <!-- airpods, tv?, acessórios? -->
     </td>
   </tr>
   <tr>
@@ -616,7 +610,7 @@
       ☐
     </td>
     <td>
-      Clonar da páginas da Apple <!-- explore => loja, suporte, só na apple => só na apple + apple tv 4k + apple tv+ -->
+      Clonagem de páginas da Apple <!-- explore => loja, suporte, só na apple => só na apple + apple tv 4k + apple tv+ -->
     </td>
   </tr>
   <tr>
@@ -624,15 +618,7 @@
       ☐
     </td>
     <td>
-      Criar página de produtos parceiros consumindo uma API
-    </td>
-  </tr>
-  <tr>
-    <td>
-      ☐
-    </td>
-    <td>
-      Migrar do Tailwind para o Styled Components se/quando necessário
+      Criação de página de produtos parceiros consumindo uma API
     </td>
   </tr>
 </table>
@@ -641,8 +627,9 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
+<img align="right" src="https://user-images.githubusercontent.com/86276393/212959080-e7945cf3-31a5-44b2-a7c0-d614ef1bb25f.png" alt="list icon" />
 A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento.
-E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de [Etapas](#%EF%B8%8F-etapas), podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.<br>
+E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.<br>
 
 Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e meu propósito durante o seu desenvolvimento é me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
@@ -739,7 +726,7 @@ Tendo as variáveis de ambiente configuradas:
 # Feito isso, você já poderá estar acessando o projeto em: http://localhost:3000
 ```
 
-## 🤝 Contato dos Contribuintes
+## 📞 Contato dos Contribuintes
 
 <table border="2">
   <tr>
