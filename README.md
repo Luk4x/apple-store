@@ -743,7 +743,7 @@ Tendo as variáveis de ambiente configuradas:
                 <br>
                 <a href="https://www.linkedin.com/in/lucasmacielf/">
                   <sub>
-                    <b>Lucas Maciel</b>
+                    <img width="12px" src="https://user-images.githubusercontent.com/86276393/213034697-3d2b2048-7a83-435c-96aa-6e5fad0466eb.png" /> <b>Lucas Maciel</b>
                   </sub>
                 </a>
               </td>
