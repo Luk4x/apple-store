@@ -62,9 +62,17 @@
 
 > Novas etapas podem ser adicionadas!
 
-<img align="right" height="300px" src="https://user-images.githubusercontent.com/86276393/212905427-ddae4d6b-05c3-40f9-b80a-352113e385c4.png" alt="list icon" />
-<table height="550px">
+<table align="center" height="100%">
   <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Definindo a estrutura base e instalando dependências
+    </td>
+    <td>
+      |
+    </td>
     <td>
       🗹
     </td>
@@ -366,6 +374,14 @@
     </td>
     <td>
       Fazendo deploy do projeto na <a href="https://vercel.com">Vercel</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
+      Implementando os toasts
     </td>
   </tr>
   <tr>
