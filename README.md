@@ -137,7 +137,7 @@
         <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
         <sub>
           <b>
-            <pre>React Responsive</pre>
+            <pre>React<br/>Responsive</pre>
           </b>
         </sub>
       </a>
