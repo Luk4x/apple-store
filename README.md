@@ -38,20 +38,10 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-> 19 tecnologias foram utilizadas durante o desenvolvimento do projeto
+> Abaixo estão as 19 tecnologias utilizadas no desenvolvimento do projeto, e seus motivos
 
 <table align="center">
   <tr>
-    <td align="center">
-      <a href="https://www.typescriptlang.org/">
-        <img src="https://skillicons.dev/icons?i=ts" width="65px" alt="Typescript icon"/><br>
-        <sub>
-          <b>
-            <pre>Typescript</pre>
-          </b>
-        </sub>
-      </a>
-    </td>
     <td align="center">
       <a href="https://nextjs.org/">
         <img src="https://skillicons.dev/icons?i=nextjs" width="65px" alt="NextJS icon"/><br>
@@ -61,6 +51,30 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o <b>SSR</b> usado para buscar o dados na aplicação, assim melhorando sua performance geral e SEO.</i>
+        </details>
+      </h6>
+    </td>
+    <td align="center">
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://skillicons.dev/icons?i=ts" width="65px" alt="Typescript icon"/><br>
+        <sub>
+          <b>
+            <pre>Typescript</pre>
+          </b>
+        </sub>
+      </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por trabalhar muito bem com o Next e ser um superset do Javascript, trazendo recursos e boas práticas que dão muita segurança durante o desenvolvimento e confiança no resultado, como sua tipagem estática e checagem de erros.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
     <a href="https://redux.js.org/">
@@ -71,6 +85,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para centralizar e padronizar os estados e a lógica de compra da aplicação, além de ser extremamente flexível e depurável.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://stripe.com/en-br/">
@@ -81,6 +102,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para simular o pagamento da compra.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://pt-br.reactjs.org/">
@@ -91,6 +119,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Ele é o framework base do projeto, o Next existe a partir dele.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
     <a href="https://tailwindcss.com/">
@@ -101,6 +136,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por agilizar e padronizar o desenvolvimento dos estilos da aplicação, trazendo vários recursos para se lidar melhor com o CSS.</i>
+        </details>
+      </h6>
     </td>
   </tr>
     <tr>
@@ -113,6 +155,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para a autenticação o usuário pela sua conta Google.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://www.sanity.io/">
@@ -123,6 +172,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por ser uma base de dados simples de se lidar e altamente customizável.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://headlessui.com/">
@@ -133,6 +189,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por dispor de componentes extremamente úteis e bem estruturados, além de se integrar muito bem com Tailwind.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://www.npmjs.com/package/react-responsive/">
@@ -143,6 +206,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por auxiliar no tratamento da responsividade da aplicação de uma forma diferente, porém necessária, do Tailwind.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://react-hot-toast.com/">
@@ -153,6 +223,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por dispor de notificações altamente customizáveis, bem estruturadas, e simples de se lidar.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://www.npmjs.com/package/react-currency-formatter/">
@@ -163,6 +240,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por agilizar o processo de formatação de moeda.</i>
+        </details>
+      </h6>
     </td>
   </tr>
   <tr>
@@ -175,6 +259,13 @@
           </b>
         </sub>
       </a>
+     <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para fornecer a informação de qual parte da página o usuário está visualizando, e auxiliar na responsividade a partir dela.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://react-icons.github.io/react-icons/">
@@ -185,6 +276,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Por conter uma vasta biblioteca de ícones.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://www.npmjs.com/package/random-string/">
@@ -195,6 +293,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para gerar o número de rastreamento da <code>pages/success</code>.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
@@ -205,6 +310,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Ele é a base do Typescript.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
@@ -215,6 +327,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Fica implícito no Tailwind.</i>
+        </details>
+      </h6>
     </td>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">
@@ -225,6 +344,13 @@
           </b>
         </sub>
       </a>
+      <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Fica implícito na sintáxe de <code>TSX</code>.</i>
+        </details>
+      </h6>
     </td>
   </tr>
 </table>
@@ -627,12 +753,6 @@
 Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.<br/>
 
 Esse fluxo de compra em sí é o principal destaque da aplicação, mas com ele vem outros pontos importantes, como a utilização de:
-<ul>
-  <li><code>Next</code>: <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o <b>SSR</b> usado para buscar o dados na aplicação, assim melhorando sua performance geral e <b>SEO</b>;</i></li>
-  <li><code>Redux</code>: <i>Para centralizar e padronizar os estados e a lógica de compra da aplicação, além de ser extremamente flexível e depurável;</i></li>
-  <li><code>Typescript</code>: <i>Por trabalhar muito bem com o Next e ser um superset do Javascript, trazendo recursos e boas práticas que dão muita segurança durante o desenvolvimento e confiança no resultado, como sua tipagem estática e checagem de erros;</i></li>
-  <li><code>Tailwind</code>: <i>Por agilizar e padronizar o desenvolvimento dos estilos da aplicação, trazendo vários recursos para se lidar melhor com o CSS;</i></li>
-</ul>
 
 esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
 <br/><br/>
