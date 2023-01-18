@@ -630,11 +630,11 @@ Esse fluxo de compra em sí é o principal destaque da aplicação, mas com ele 
 <ul>
   <li><code>Next</code>: <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o <b>SSR</b> usado para buscar o dados na aplicação, assim melhorando sua performance geral e <b>SEO</b>;</i></li>
   <li><code>Redux</code>: <i>Para centralizar e padronizar os estados e a lógica de compra da aplicação, além de ser extremamente flexível e depurável;</i></li>
-  <li><code>Typescript</code>: <i>Por trabalhar muito bem com o Next e ser um superset do Javascript, trazendo recursos que dão muita segurança durante o desenvolvimento e confiança no resultado, como sua tipagem estática;</i></li>
-  <li></li>
+  <li><code>Typescript</code>: <i>Por trabalhar muito bem com o Next e ser um superset do Javascript, trazendo recursos e boas práticas que dão muita segurança durante o desenvolvimento e confiança no resultado, como sua tipagem estática e checagem de erros;</i></li>
+  <li><code>Tailwind</code>: <i>Por agilizar e padronizar o desenvolvimento dos estilos da aplicação, trazendo vários recursos para se lidar melhor com o CSS;</i></li>
 </ul>
 
-<b>Redux</b> _- tecnologia amplamente utilizada nesses cenários por centralizar e padronizar os estados e a lógica da aplicação, além de ser extremamente flexível e depurável -_, Next _-  -_ porém, ela também tem outros pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
+esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
 <br/><br/>
 Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e tenho o objetivo de me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
