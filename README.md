@@ -197,16 +197,6 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://nodejs.org/">
-        <img src="https://skillicons.dev/icons?i=nodejs" height="65px" alt="NodeJS icon"/><br>
-        <sub>
-          <b>
-            <pre>NodeJS</pre>
-          </b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
         <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
         <sub>
@@ -226,8 +216,6 @@
         </sub>
       </a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/">
         <img src="https://skillicons.dev/icons?i=html" width="65px" alt="HTML5 icon"/><br>
@@ -563,6 +551,14 @@
       ☐
     </td>
     <td>
+      Melhoria do tratamento de erros
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
       Otimização da performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, remove currency formatter --> 
     </td>
   </tr>
@@ -628,11 +624,23 @@
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
 <img align="right" src="https://user-images.githubusercontent.com/86276393/212980660-edc0babb-f014-439f-b823-4a4e9ece7d45.png" alt="list icon" />
-A aplicação se consiste principalmente em ser um E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.
-E digo principalmente, pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
+Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.<br/>
+
+Esse fluxo de compra em sí é o principal destaque da aplicação, mas com ele vem outros pontos importantes, como a utilização de:
+<ul>
+  <li><code>Next</code>: <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o <b>SSR</b> usado para buscar o dados na aplicação, assim melhorando sua performance geral e <b>SEO</b>;</i></li>
+  <li><code>Redux</code>: <i>Para centralizar e padronizar os estados e a lógica de compra da aplicação, além de ser extremamente flexível e depurável;</i></li>
+  <li><code>Typescript</code>: <i>Por trabalhar muito bem com o Next e ser um superset do Javascript, trazendo recursos que dão muita segurança durante o desenvolvimento e confiança no resultado, como sua tipagem estática;</i></li>
+  <li></li>
+</ul>
+
+<b>Redux</b> _- tecnologia amplamente utilizada nesses cenários por centralizar e padronizar os estados e a lógica da aplicação, além de ser extremamente flexível e depurável -_, Next _-  -_ porém, ela também tem outros pois esse projeto está em constante evolução, como pode ser conferida na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, podendo ser também um clone de algumas páginas da Apple, e tendo outros destaques.
 <br/><br/>
 Aprendi e continuo aprendendo bastante durante o desenvolvimento desse projeto, e tenho o objetivo de me aprofundar cada vez mais em Next, Typescript, Redux e Tailwind.
 
+mais informações nas etapas e páginas/compoenets
+
+profissionalismo, evolução em react
 ### 📄 Páginas e Rotas
 
 #### A aplicação tem um total de 3 componentes de página, sendo eles:
