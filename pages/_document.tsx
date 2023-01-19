@@ -14,13 +14,16 @@ export default function document() {
                 <meta name="author" content="Lucas Maciel (luk4xm4ci3l@gmail.com)" />
                 <meta
                     name="keywords"
-                    content="html, css, javascript, typescript, tailwind, nextjs, reactjs, axios, npm, sanity studio, redux, luk4x"
+                    content="html, css, javascript, typescript, tailwind, nextjs, reactjs, stripe, npm, sanity, redux, nextauth, headlessui, react hot toast, react icons, luk4x"
                 />
                 <meta
                     property="og:description"
-                    content="A aplicação se consiste numa loja da Apple."
+                    content="Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo de compra completo, porém esse não é seu único destaque."
                 />
-                <meta property="og:image" content="" />
+                <meta
+                    property="og:image"
+                    content="https://user-images.githubusercontent.com/86276393/212569133-c845f016-df7f-41ee-a3a1-43bbbc2a6669.png"
+                />
                 <meta property="og:title" content="Apple Store" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link

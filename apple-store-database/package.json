@@ -2,7 +2,7 @@
     "name": "apple-store-database",
     "private": true,
     "version": "1.0.0",
-    "description": "devdojo",
+    "description": "Luk4x Apple Store Database",
     "main": "package.json",
     "author": "Lucas Maciel <luk4xm4ci3l@gmail.com>",
     "license": "UNLICENSED",
