@@ -361,6 +361,7 @@
 
 > Novas etapas podem ser adicionadas!
 
+<img align="right" src="https://user-images.githubusercontent.com/86276393/213448158-f5d406ef-70ac-4acc-9e98-fd9954d08e9d.png" alt="arrow icon" />
 <table align="center" height="548px">
   <tr>
     <td>
@@ -746,8 +747,6 @@
     </td>
   </tr>
 </table>
-<img align="right" src="https://user-images.githubusercontent.com/86276393/213446241-d703a9a9-6183-46e0-ac10-f0227ef663ae.png" alt="arrow icon" />
-<br/>
 
 ## 📝 Sobre
 
