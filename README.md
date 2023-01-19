@@ -746,6 +746,8 @@
     </td>
   </tr>
 </table>
+<img align="right" src="https://user-images.githubusercontent.com/86276393/213446241-d703a9a9-6183-46e0-ac10-f0227ef663ae.png" alt="arrow icon" />
+<br/>
 
 ## 📝 Sobre
 
