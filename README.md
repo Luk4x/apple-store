@@ -640,7 +640,7 @@
       🗹
     </td>
     <td>
-      Criação da lisença e desenvolvimento do README do projeto <!-- e README-en -->
+      Criação da licença e desenvolvimento do README do projeto <!-- e README-en -->
     </td>
   </tr>
   <tr>
