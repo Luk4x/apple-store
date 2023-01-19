@@ -55,7 +55,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o <b>SSR</b> usado para buscar o dados na aplicação, assim melhorando sua performance geral e SEO.</i>
+          <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o SSR usado para buscar os dados na aplicação, assim melhorando também o SEO.</i>
         </details>
       </h6>
     </td>
@@ -159,7 +159,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Para a autenticação o usuário pela sua conta Google.</i>
+          <i>Para a autenticação do usuário.</i>
         </details>
       </h6>
     </td>
@@ -350,7 +350,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Fica implícito na sintáxe de <code>TSX</code>.</i>
+          <i>Fica implícito na sintaxe de <code>TSX</code>.</i>
         </details>
       </h6>
     </td>
