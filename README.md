@@ -361,7 +361,6 @@
 
 > Novas etapas podem ser adicionadas!
 
-<img align="right" src="https://user-images.githubusercontent.com/86276393/213448158-f5d406ef-70ac-4acc-9e98-fd9954d08e9d.png" alt="arrow icon" />
 <table align="center" height="548px">
   <tr>
     <td>
@@ -473,6 +472,7 @@
     </td>
     <td>
       Busca dos produtos da base de dados via <b>SSR</b>
+      <img align="right" src="https://user-images.githubusercontent.com/86276393/213449768-416cc5b4-e3a7-4774-85b8-9a58cb1f8ae6.png" alt="arrow icon" />
     </td>
   </tr>
   <tr>
@@ -756,7 +756,8 @@
 Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.
 Esse fluxo de compra em sí é o principal destaque da aplicação, mas existem outros pontos importantes que podem ser conferidos nas sessões abaixo.
 <br/><br/>
-Também recomendo conferir especialmente os motivos da utilização de <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> e <b>Tailwind</b> na sessão de <a href="#-tecnologias-utilizadas">Tecnologias</a>, pois elas são as responsáveis por fazerem essa aplicação ser tão profissional devido aos seus modernos recursos. Foco em React e essas tecnologias são uma parte fundamental de seu ecossistema, e por isso irei continuar aprendendo e me aprofundando bastante durante o desenvolvimento dessa aplicação para cumprir todas as tarefas listadas na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>.
+Também recomendo conferir especialmente os motivos da utilização de <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> e <b>Tailwind</b> na sessão de <a href="#-tecnologias-utilizadas">Tecnologias</a>, pois meu principal objetivo com esse projeto foi desenvolver minha autonomia com tais tecnologias, visto que sou um desenvolvedor <b>React</b> e elas são uma parte fundamental do seu ecossistema, sendo elas as principais responsáveis pela agilidade, confiança, performance e profissionalismo de forma geral durante o desenvolvimento da aplicação, devido aos seus excelentes recursos.<br/>
+Irei continuar aprendendo e me aprofundando bastante nessas tecnologias durante o desenvolvimento dessa aplicação para cumprir todas as tarefas listadas na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, que é uma sessão que também vale a pena conferir para ter uma visão geral sobre a evolução do projeto.
 
 ### 📄 Páginas e Rotas
 
