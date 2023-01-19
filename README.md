@@ -359,7 +359,7 @@
 
 ## 🗓️ Etapas
 
-> Novas etapas podem ser adicionadas!
+> 35 das atuais 48 etapas já foram concluídas, mas novas podem ser adicionadas!
 
 <table align="center" height="548px">
   <tr>
@@ -640,7 +640,7 @@
       🗹
     </td>
     <td>
-      Criação da lisença e desenvolvimento do README do projeto
+      Criação da lisença e desenvolvimento do README do projeto <!-- e README-en -->
     </td>
   </tr>
   <tr>
@@ -672,7 +672,7 @@
       ☐
     </td>
     <td>
-      Desenvolvimento Cross-Browser
+      Desenvolvimento Cross-Browser <!-- e estilização do scroll -->
     </td>
   </tr>
   <tr>
@@ -756,7 +756,7 @@
 Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo de compra completo, onde o usuário pode ou não se autenticar através de sua conta Google, adicionar e remover produtos do seu carrinho, simular o pagamento desses produtos através do ambiente de testes do Stripe, e ao final será redirecionado para uma página de confirmação e agradecimento da compra.
 Esse fluxo de compra em sí é o principal destaque da aplicação, mas existem outros pontos importantes que podem ser conferidos nas sessões abaixo.
 <br/><br/>
-Também recomendo conferir especialmente os motivos da utilização de <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> e <b>Tailwind</b> na sessão de <a href="#-tecnologias-utilizadas">Tecnologias</a>, pois meu principal objetivo com esse projeto foi desenvolver minha autonomia com tais tecnologias, visto que sou um desenvolvedor <b>React</b> e elas são uma parte fundamental do seu ecossistema, sendo elas as principais responsáveis pela agilidade, confiança, performance e profissionalismo de forma geral durante o desenvolvimento da aplicação, devido aos seus excelentes recursos.<br/>
+Também recomendo conferir especialmente os motivos da utilização de <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> e <b>Tailwind</b> na sessão de <a href="#-tecnologias-utilizadas">Tecnologias</a>, pois meu principal objetivo com esse projeto foi desenvolver minha autonomia com tais tecnologias, visto que sou um desenvolvedor <b>React</b> e elas são uma parte fundamental de seu ecossistema, sendo elas as principais responsáveis pela agilidade, confiança, performance e profissionalismo de forma geral durante o desenvolvimento da aplicação, devido aos seus excelentes recursos.<br/>
 Irei continuar aprendendo e me aprofundando bastante nessas tecnologias durante o desenvolvimento dessa aplicação para cumprir todas as tarefas listadas na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, que é uma sessão que também vale a pena conferir para ter uma visão geral sobre a evolução do projeto.
 
 ### 📄 Páginas e Rotas
@@ -824,19 +824,21 @@ Estando agora na raiz do projeto, crie o arquivo `.env.local`, que deve conter a
 ```bash
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 NEXT_PUBLIC_SANITY_DATASET=production
-NEXT_PUBLIC_SANITY_PROJECT_ID=eg7o3xb7
-SANITY_API_TOKEN=skXfDbS2I0Wq6b3MKAK7Z4YufmzKEgyg2u1uu8z8g5CXJnRLdiG4v3EZ5mn73eKD6YZAnkPtAcfnQdXAwWUXq5njSXalAQB46i4G5YziAMuENoTMTTe2Atpr8Y3jMqwgE7Epb9RATNJE7fpZeOJhLkFbKhfEkkxwkNY9lLuKvmsVQKiPwwQ7
+NEXT_PUBLIC_SANITY_PROJECT_ID=
+SANITY_API_TOKEN=
 
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=suaChavePublicavelNoStripe
-STRIPE_SECRET_KEY=suaChaveSecretaNoStripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
 
-GOOGLE_CLIENT_ID=seuIdGoogleCloud
-GOOGLE_CLIENT_SECRET=suaChaveSecretaGoogleCloud
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
 NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=8d483308855e9b1f26f4076108879cbf
+NEXTAUTH_SECRET=
 ```
 
-Tendo as variáveis de ambiente configuradas:
+Para configurar tais variáveis, você precisará criar um projeto no [Sanity](https://www.sanity.io/), [Stripe](https://stripe.com/en-br/) e [Google Cloud](https://cloud.google.com/), além de que precisará preencher a base de dados também.<br/>
+Feito isso:
 
 ```bash
 # Instale as dependências com:
@@ -893,6 +895,7 @@ Tendo as variáveis de ambiente configuradas:
 </p>
 
 <!--
+  keep tecnology and phase numbers updated
   add vitrinedev and portfolio-project tag
   Change Repo/Settings/Social Preview
 -->
