@@ -34,7 +34,7 @@
 </div>
 
 > **Caso o vídeo apresente algum erro, recarregue a página!**<br>
-> Acesse o projeto online **[AQUI]()**
+> Acesse o projeto online **[AQUI](https://luk4x-apple-store.vercel.app)**
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -645,7 +645,7 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
     </td>
     <td>
       Melhoria do <b>SEO</b> do projeto
@@ -653,7 +653,15 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
+    </td>
+    <td>
+      Remoção do <code>react-currency-formatter</code> e desenvolvimento do <code>components/Currency</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
     </td>
     <td>
       Deploy do projeto na <a href="https://vercel.com">Vercel</a>
@@ -688,7 +696,7 @@
       ☐
     </td>
     <td>
-      Otimização da performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, remove currency formatter --> 
+      Otimização da performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, nextfont --> 
     </td>
   </tr>
   <tr>
@@ -719,7 +727,7 @@
       ☐
     </td>
     <td>
-      Desenvolvimento da página para os produtos
+      Desenvolvimento da página para cada produto
     </td>
   </tr>
   <tr>
@@ -785,6 +793,7 @@ Irei continuar aprendendo e me aprofundando bastante nessas tecnologias durante 
   - `components/Button`: Esse componente é relativo ao botão reaproveitado periodicamente durante a aplicação;
   - `components/Cart`: Esse componente é relativo ao ícone de carrinho que aparece quando existe algum item no carrinho e o scroll está baixo de 400;
   - `components/CheckoutProduct`: Esse componente é relativo aos produtos mostrados na `pages/checkout`;
+  - `components/Currency`: Esse componente é responsável pela formatação de moeda dos preços;
   - `components/Header`: Esse componente é relativo ao cabeçalho da aplicação;
   - `components/Product`: Esse componente é relativo aos produtos mostrados no `pages/index`.
 
