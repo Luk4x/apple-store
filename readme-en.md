@@ -34,11 +34,11 @@
 </div>
 
 > **If the video has any errors, reload the page!**<br>
-> Access the project online **[HERE]()**
+> Access the project online **[HERE](https://luk4x-apple-store.vercel.app)**
 
 ## 🚀 Technologies Used
 
-> Below are the 19 technologies used in the development of the project, and their reasons
+> Below are the 18 technologies used in the development of the project, and their reasons
 
 <table align="center">
   <tr>
@@ -233,23 +233,6 @@
         </details>
       </h6>
     </td>
-    <td align="center">
-      <a href="https://www.npmjs.com/package/react-currency-formatter/">
-        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
-        <sub>
-          <b>
-            <pre>React Currency<br/>Formatter</pre>
-          </b>
-        </sub>
-      </a>
-      <h6>
-        <details>
-          <summary>Reason</summary>
-          <br/>
-          <i>For speeding up the currency formatting process.</i>
-        </details>
-      </h6>
-    </td>
    <td align="center">
       <a href="https://www.npmjs.com/package/react-use-scroll-position/">
         <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
@@ -301,8 +284,6 @@
         </details>
       </h6>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
         <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
@@ -320,6 +301,8 @@
         </details>
       </h6>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
         <img src="https://skillicons.dev/icons?i=css" width="65px" alt="CSS3 icon"/><br>
@@ -359,7 +342,7 @@
 
 ## 🗓️ Steps
 
-> 35 of the current 48 steps have already been completed, but new ones could be added!
+> 38 of the current 49 steps have already been completed, but new ones could be added!
 
 <table align="center" height="548px">
   <tr>
@@ -645,7 +628,7 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
     </td>
     <td>
       Project <b>SEO</b> improvement
@@ -653,7 +636,15 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
+    </td>
+    <td>
+      <code>react-currency-formatter</code> removal and <code>components/Currency</code> development
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
     </td>
     <td>
       Project deployment in <a href="https://vercel.com">Vercel</a>
@@ -777,6 +768,8 @@ I will continue to learn and delve a lot into these technologies during the deve
 
 ### 📑 Other Components
 
+#### The application also has 17 more components, namely:
+
    - `pages/_app`: This component contains global application settings, such as Redux and NextAuth contexts that involve the entire application, global styles, and toast rendering;
    - `pages/_document`: Briefly, this component contains the application's **SEO** settings.
 
@@ -785,6 +778,7 @@ I will continue to learn and delve a lot into these technologies during the deve
    - `components/Button`: This component is related to the button reused periodically during the application;
    - `components/Cart`: This component is related to the cart icon that appears when there is an item in the cart and the scroll is below 400;
    - `components/CheckoutProduct`: This component is related to the products shown in `pages/checkout`;
+   - `components/Currency`: This component is responsible for formatting prices currency;
    - `components/Header`: This component is relative to the application header;
    - `components/Product`: This component is related to the products shown in `pages/index`.
 
