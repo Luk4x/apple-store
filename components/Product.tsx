@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { urlFor } from '../sanity';
-import Currency from 'react-currency-formatter';
+import Currency from './Currency';
 
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
@@ -39,7 +39,7 @@ export default function Product({ product }: Props) {
                         <p className="mb-2 w-[180px] border-b-2 border-pink-500 pb-2 text-white md:w-[240px]">
                             {product.title}
                         </p>
-                        <Currency quantity={product.price} currency="BRL" />
+                        <Currency value={product.price} />
                     </div>
                 </div>
                 <div

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { urlFor } from '../sanity';
-import Currency from 'react-currency-formatter';
+import Currency from './Currency';
 
 import { HiChevronDown } from 'react-icons/hi2';
 import Button from './Button';
@@ -51,11 +51,10 @@ export default function CheckoutProduct({ products, id }: Props) {
                 <div className="flex flex-col items-end space-x-4">
                     <h4 className="text-xl font-semibold lg:text-2xl">
                         <Currency
-                            quantity={products.reduce(
+                            value={products.reduce(
                                 (total, product) => total + product.price,
                                 0
                             )}
-                            currency="BRL"
                         />
                     </h4>
                     <Button title="Remove" onClick={removeProductFromCart} />

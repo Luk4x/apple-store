@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import Currency from 'react-currency-formatter';
+import Currency from '../components/Currency';
 
 import {
     HiOutlineCheck,
@@ -136,7 +136,7 @@ export default function Success({ products, trackingNumber }: Props) {
                                     )}
                                 </button>
                                 <p className="text-xl font-medium text-black">
-                                    <Currency quantity={subtotal} currency="BRL" />
+                                    <Currency value={subtotal} />
                                 </p>
                             </div>
                         </div>
@@ -161,10 +161,9 @@ export default function Success({ products, trackingNumber }: Props) {
                                             </p>
                                             <p>
                                                 <Currency
-                                                    quantity={
+                                                    value={
                                                         product.price.unit_amount / 100
                                                     }
-                                                    currency="BRL"
                                                 />
                                             </p>
                                         </div>
@@ -174,16 +173,13 @@ export default function Success({ products, trackingNumber }: Props) {
                                     <div className="flex justify-between text-sm">
                                         <p className="text-gray-500">Subtotal</p>
                                         <p className="font-medium">
-                                            <Currency
-                                                quantity={subtotal}
-                                                currency="BRL"
-                                            />
+                                            <Currency value={subtotal} />
                                         </p>
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <p className="text-gray-500">Desconto</p>
                                         <p className="font-medium">
-                                            <Currency quantity={0} currency="BRL" />
+                                            <Currency value={0} />
                                         </p>
                                     </div>
                                 </div>
@@ -192,10 +188,7 @@ export default function Success({ products, trackingNumber }: Props) {
                                     <p className="flex items-center gap-x-2 text-xs text-gray-500">
                                         BRL
                                         <span className="text-xl font-medium text-black">
-                                            <Currency
-                                                quantity={subtotal}
-                                                currency="BRL"
-                                            />
+                                            <Currency value={subtotal} />
                                         </span>
                                     </p>
                                 </div>

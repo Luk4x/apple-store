@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Currency from 'react-currency-formatter';
+import Currency from '../components/Currency';
 
 import Header from '../components/Header';
 import Button from '../components/Button';
@@ -94,10 +94,7 @@ export default function Checkout() {
                                     <div className="flex justify-between">
                                         <p>Subtotal</p>
                                         <p>
-                                            <Currency
-                                                quantity={totalProducts}
-                                                currency="BRL"
-                                            />
+                                            <Currency value={totalProducts} />
                                         </p>
                                     </div>
                                     <div>
@@ -118,10 +115,7 @@ export default function Checkout() {
                                 <div className="flex justify-between pt-4 text-xl font-semibold">
                                     <h4>Total</h4>
                                     <h4>
-                                        <Currency
-                                            quantity={totalProducts}
-                                            currency="BRL"
-                                        />
+                                        <Currency value={totalProducts} />
                                     </h4>
                                 </div>
                             </div>
@@ -135,11 +129,8 @@ export default function Checkout() {
                                             <span>Pague mensalmente</span>
                                             <span>Com o Cartão Apple</span>
                                             <span>
-                                                <Currency
-                                                    quantity={1415.16}
-                                                    currency="BRL"
-                                                />{' '}
-                                                por mês à 0% de juros.
+                                                <Currency value={1415.16} /> por mês à 0%
+                                                de juros.
                                             </span>
                                         </h4>
                                         <Button title="Pague prestações mensais com o Cartão Apple" />
@@ -153,10 +144,7 @@ export default function Checkout() {
                                         <h4 className="mb-4 flex flex-col text-center text-xl font-semibold">
                                             Pague integralmente
                                             <span>
-                                                <Currency
-                                                    quantity={totalProducts}
-                                                    currency="BRL"
-                                                />
+                                                <Currency value={totalProducts} />
                                             </span>
                                         </h4>
                                         <Button
