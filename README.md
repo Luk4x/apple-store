@@ -38,7 +38,7 @@
 
 ## 🚀 Tecnologias Utilizadas
 
-> Abaixo estão as 19 tecnologias utilizadas no desenvolvimento do projeto, e seus motivos
+> Abaixo estão as 18 tecnologias utilizadas no desenvolvimento do projeto, e seus motivos
 
 <table align="center">
   <tr>
@@ -233,23 +233,6 @@
         </details>
       </h6>
     </td>
-    <td align="center">
-      <a href="https://www.npmjs.com/package/react-currency-formatter/">
-        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
-        <sub>
-          <b>
-            <pre>React Currency<br/>Formatter</pre>
-          </b>
-        </sub>
-      </a>
-      <h6>
-        <details>
-          <summary>Motivo</summary>
-          <br/>
-          <i>Por agilizar o processo de formatação de moeda.</i>
-        </details>
-      </h6>
-    </td>
    <td align="center">
       <a href="https://www.npmjs.com/package/react-use-scroll-position/">
         <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
@@ -301,8 +284,6 @@
         </details>
       </h6>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
         <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
@@ -320,6 +301,8 @@
         </details>
       </h6>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
         <img src="https://skillicons.dev/icons?i=css" width="65px" alt="CSS3 icon"/><br>
@@ -359,7 +342,7 @@
 
 ## 🗓️ Etapas
 
-> 35 das atuais 48 etapas já foram concluídas, mas novas podem ser adicionadas!
+> 38 das atuais 49 etapas já foram concluídas, mas novas podem ser adicionadas!
 
 <table align="center" height="548px">
   <tr>
@@ -784,6 +767,8 @@ Irei continuar aprendendo e me aprofundando bastante nessas tecnologias durante 
   - `pages/api/getSession`: Essa rota é responsável por retornar uma sessão a partir do id recebido. _Exemplo de uso:_ `utils/fetchLineProducts`.
 
 ### 📑 Demais Componentes
+
+#### A aplicação também conta com mais 17 componentes, sendo eles:
 
   - `pages/_app`: Nesse componente ficam configurações globais da aplicação, como os contextos do Redux e do NextAuth que envolvem toda a aplicação, estilos globais, e a renderização dos toasts;
   - `pages/_document`: Resumidamente, nesse componente ficam as configurações de **SEO** da aplicação.
