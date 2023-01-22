@@ -55,7 +55,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Por conter diversos recursos que auxiliam no desenvolvimento, e otimizações de performance e afins, como o SSR usado para buscar os dados na aplicação, assim melhorando também o SEO.</i>
+          <i>Por conter diversos recursos que auxiliam no desenvolvimento, otimizações de performance e afins, como o SSR usado para buscar os dados na aplicação, assim melhorando também o SEO, além possibilitar facilmente a criação das rotas através do API Routes.</i>
         </details>
       </h6>
     </td>
@@ -142,7 +142,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Para simular o pagamento da compra.</i>
+          <i>Por ser uma conceituada plataforma de processamento de pagamentos, sendo utilizada para simular o pagamento das compras.</i>
         </details>
       </h6>
     </td>
@@ -159,7 +159,7 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Para a autenticação do usuário.</i>
+          <i>Para a autenticação do usuário pela sua conta Google.</i>
         </details>
       </h6>
     </td>
@@ -342,7 +342,7 @@
 
 ## 🗓️ Etapas
 
-> 38 das atuais 49 etapas já foram concluídas, mas novas podem ser adicionadas!
+> 39 das atuais 50 etapas já foram concluídas, mas novas podem ser adicionadas!
 
 <table align="center" height="548px">
   <tr>
@@ -639,7 +639,15 @@
       🗹
     </td>
     <td>
-      Remoção do <code>react-currency-formatter</code> e desenvolvimento do <code>components/Currency</code>
+      Remoção do <code>react-currency-formatter</code> (bugging)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvimento do <code>components/Currency</code>
     </td>
   </tr>
   <tr>
@@ -737,6 +745,9 @@
       Criação de página de produtos parceiros consumindo uma API
     </td>
   </tr>
+  
+  <!-- suggest user account data in payment -->
+  <!-- migrate from tailwind to styled-components if/when necessary -->
 </table>
 
 ## 📝 Sobre
@@ -748,7 +759,7 @@ Em resumo, a aplicação se consiste num E-Commerce da Apple, simulando um fluxo
 Esse fluxo de compra em sí é o principal destaque da aplicação, mas existem outros pontos importantes que podem ser conferidos nas sessões abaixo.
 <br/><br/>
 Também recomendo conferir especialmente os motivos da utilização de <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> e <b>Tailwind</b> na sessão de <a href="#-tecnologias-utilizadas">Tecnologias</a>, pois meu principal objetivo com esse projeto foi desenvolver minha autonomia com tais tecnologias, visto que sou um desenvolvedor <b>React</b> e elas são uma parte fundamental de seu ecossistema, sendo elas as principais responsáveis pela agilidade, confiança, performance e profissionalismo de forma geral durante o desenvolvimento da aplicação, devido aos seus excelentes recursos.<br/>
-Irei continuar aprendendo e me aprofundando bastante nessas tecnologias durante o desenvolvimento dessa aplicação para cumprir todas as tarefas listadas na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, que é uma sessão que também vale a pena conferir para ter uma visão geral sobre a evolução do projeto.
+Mas isso claro, sem tirar o mérito das outras tecnologias utilizadas, todas elas desempenham um papel fundamental especificado junto delas, e contribuem para o resultado do projeto como um todo, e irei continuar aprendendo e me aprofundando bastante nessas tecnologias e no que for necessário durante o desenvolvimento dessa aplicação para colocar todas as minhas ideias em prática e cumprir todas as tarefas listadas na sessão de <a href="#%EF%B8%8F-etapas">Etapas</a>, que é uma sessão que também vale a pena conferir para ter uma visão geral sobre a evolução do projeto.
 
 ### 📄 Páginas e Rotas
 
