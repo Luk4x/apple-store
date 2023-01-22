@@ -55,7 +55,7 @@
         <details>
           <summary>Reason</summary>
           <br/>
-          <i>Because it contains several features that help with development, and performance optimizations and the like, such as the SSR used to fetch data in the application, thus also improving SEO.</i>
+          <i>Because it contains several resources that help in development, performance optimizations and the like, such as the SSR used to fetch data in the application, thus also improving SEO, in addition to easily enabling the creation of routes through the Routes API.</i>
         </details>
       </h6>
     </td>
@@ -142,7 +142,7 @@
         <details>
           <summary>Reason</summary>
           <br/>
-          <i>To simulate the payment of the purchase.</i>
+          <i>As it is a reputable payment processing platform, it is used to simulate the payment of purchases.</i>
         </details>
       </h6>
     </td>
@@ -159,7 +159,7 @@
         <details>
           <summary>Reason</summary>
           <br/>
-          <i>For user authentication.</i>
+          <i>For user authentication by your Google account.</i>
         </details>
       </h6>
     </td>
@@ -342,7 +342,7 @@
 
 ## 🗓️ Steps
 
-> 38 of the current 49 steps have already been completed, but new ones could be added!
+> 39 of the current 50 steps have already been completed, but new ones could be added!
 
 <table align="center" height="548px">
   <tr>
@@ -639,7 +639,15 @@
       🗹
     </td>
     <td>
-      <code>react-currency-formatter</code> removal and <code>components/Currency</code> development
+      <code>react-currency-formatter</code> removal (bugging)
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      <code>components/Currency</code> development
     </td>
   </tr>
   <tr>
@@ -744,11 +752,11 @@
 > Watching the video above and/or accessing the project online will help you understand the explanation!
 
 <img align="right" src="https://user-images.githubusercontent.com/86276393/212980660-edc0babb-f014-439f-b823-4a4e9ece7d45.png" alt="notepad icon" />
-In summary, the application consists of an Apple E-Commerce, simulating a complete purchase flow, where the user can or cannot authenticate himself through his Google account, add and remove products from his cart, simulate the payment of these products through the Stripe test environment, and at the end you will be redirected to a confirmation and thank you page for the purchase.<br/>
-This purchase flow itself is the main highlight of the application, but there are other important points that can be seen in the sections below.
+In summary, the application consists of an Apple E-Commerce, simulating a complete purchase flow, where the user can or cannot authenticate himself through his Google account through <b>NextAuth</b>, add and remove products from his cart with the help of <b>Redux</b>, simulate payment for these products through the <b>Stripe</b> test environment, and at the end you will be redirected to a confirmation and thank you page for the purchase. This purchase flow itself involving the products searched from the <b>Sanity</b> database is the main highlight of the application, but there are other very important points that can be seen in the sections below.
 <br/><br/>
-I also recommend checking especially the reasons for using <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> and <b>Tailwind</b> in the <a href ="#-technologies-used">Technologies</a>, because my main objective with this project was to develop my autonomy with such technologies, since I am a <b>React</b> developer and they are a fundamental part of its ecosystem, being the main ones responsible for agility, reliability, performance and professionalism in general during the development of the application, due to its excellent resources.<br/>
-I will continue to learn and delve a lot into these technologies during the development of this application to fulfill all the tasks listed in the <a href="#%EF%B8%8F-steps">Steps</a> section, which is a section that it's also worth checking out to get an overview of the project's evolution.
+I also recommend especially checking out the reasons for using <b>NextJS</b>, <b>Typescript</b>, <b>Redux</b> and <b>Tailwind</b> in the <a href ="#-technologies-used">Technologies</a> section, as my main objective with this project was to develop my autonomy with such technologies, since I am a <b>React</b> developer and they are a fundamental part of my ecosystem, being the main ones responsible for agility, reliability, performance and professionalism in general during the development of the application, due to its excellent resources.
+<br/><br/>
+But this is clear, without taking away the merit of the other technologies used, they all play a specified fundamental role with them, and contribute to the result of the project as a whole, and I will continue to learn and deepen myself a lot in these technologies and in what is necessary during the development of this application to put all my ideas into practice and fulfill all the tasks listed in the <a href="#%EF%B8%8F-steps">Steps</a> section, which is a section that is also worth checking out to get an overview of the project's evolution.
 
 ### 📄 Pages and Routes
 
