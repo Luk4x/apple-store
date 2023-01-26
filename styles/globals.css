@@ -2,9 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.simplebar-scrollbar::before {
+    background: linear-gradient(45deg, #ec4899, #8b5cf6) !important;
+}
+
 @layer base {
     html {
         @apply scroll-smooth;
+        scrollbar-width: 10px;
+        scrollbar-color: #ec4899 #ffffff00;
+    }
+
+    html::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    html::-webkit-scrollbar-track-piece {
+        background-color: transparent !important;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: #ec4899;
+        border-radius: 3px;
+    }
+
+    html::-webkit-scrollbar-thumb:hover {
+        background: #ec4899;
     }
 
     body {

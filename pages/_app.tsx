@@ -6,12 +6,17 @@ import { SessionProvider } from 'next-auth/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     return (
         <SessionProvider session={session}>
             <Provider store={store}>
-                <Toaster />
-                <Component {...pageProps} />
+                <SimpleBar className="h-screen">
+                    <Toaster />
+                    <Component {...pageProps} />
+                </SimpleBar>
             </Provider>
         </SessionProvider>
     );
