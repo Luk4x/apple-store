@@ -8,15 +8,28 @@ import { store } from '../redux/store';
 
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+// import { useEffect, useRef } from 'react';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+    // const barRef = useRef<any>(null);
+
+    // useEffect(() => {
+    //     barRef.current
+    //         ?.getScrollElement()
+    //         .addEventListener('scroll', ({ target }: any) => {
+    //             console.log(target.scrollTop);
+    //         });
+    // });
+
     return (
         <SessionProvider session={session}>
             <Provider store={store}>
-                <SimpleBar className="h-screen">
+                {/* <SimpleBar ref={barRef} className="h-screen">
                     <Toaster />
                     <Component {...pageProps} />
-                </SimpleBar>
+                </SimpleBar> */}
+                <Toaster />
+                <Component {...pageProps} />
             </Provider>
         </SessionProvider>
     );

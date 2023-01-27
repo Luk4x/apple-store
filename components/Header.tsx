@@ -16,10 +16,27 @@ import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
+import { useScrollYPosition } from 'react-use-scroll-position';
+
 export default function Header() {
     const { data: session } = useSession();
     const products = useSelector(selectCartProducts);
+
     const [blur, setBlur] = useState(false);
+    const scrollY = useScrollYPosition();
+
+    const handleMobileMenu = async () => {
+        setBlur(!blur);
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        !blur && (document.body.style.overflowX = 'hidden');
+
+        // await scroll top to hide scroll based on scroll position divided by 2
+        setTimeout(() => {
+            blur && (document.body.style.overflowX = 'auto');
+            document.body.style.overflowY = blur ? 'auto' : 'hidden';
+        }, 100 + scrollY / 2);
+    };
 
     return (
         <header className="sticky top-0 z-30 flex w-full items-center justify-between border-b-2 border-gray-500 bg-[#e7ecee] p-4">
@@ -33,7 +50,7 @@ export default function Header() {
                         <>
                             <Popover.Button
                                 className="translate-y-1 text-2xl outline-none"
-                                onClick={() => setBlur(!blur)}
+                                onClick={handleMobileMenu}
                             >
                                 {open ? <HiOutlineBars3BottomLeft /> : <HiOutlineBars3 />}
                             </Popover.Button>
@@ -47,7 +64,7 @@ export default function Header() {
                                 leaveTo="opacity-0 -translate-x-2"
                             >
                                 <Popover.Panel className="absolute -top-5 -z-10 h-screen after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:content-['']">
-                                    <div className="text-md absolute -left-7 top-[2px] -z-10 ml-2 flex h-screen w-[250px] flex-col gap-2 bg-[#e7ecee] p-6 pt-16 text-center shadow-[0_0_100px_100px_rgba(0,0,0,0.2)]">
+                                    <div className="text-md absolute -left-7 top-[2px] -z-10 ml-2 flex h-screen w-[250px] flex-col gap-2 bg-[#e7ecee] p-6 pt-16 text-center shadow-[0_0_100px_100px_rgba(0,0,0,0.2)] before:absolute before:left-0 before:-bottom-2 before:h-[20px] before:w-[250px] before:bg-[#e7ecee] before:content-['']">
                                         <Link href="/" className="mobileHeaderLink">
                                             Outros Produtos
                                         </Link>

@@ -2,32 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.simplebar-scrollbar::before {
-    background: linear-gradient(45deg, #ec4899, #8b5cf6) !important;
-}
-
 @layer base {
     html {
         @apply scroll-smooth;
-        scrollbar-width: 10px;
-        scrollbar-color: #ec4899 #ffffff00;
+        scrollbar-width: 0;
     }
 
     html::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    html::-webkit-scrollbar-track-piece {
-        background-color: transparent !important;
-    }
-
-    html::-webkit-scrollbar-thumb {
-        background: #ec4899;
-        border-radius: 3px;
-    }
-
-    html::-webkit-scrollbar-thumb:hover {
-        background: #ec4899;
+        width: 0;
     }
 
     body {
@@ -63,4 +45,26 @@
     .tabPanel {
         @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
     }
+}
+
+.simplebar-scrollbar::before {
+    background: linear-gradient(45deg, #ec4899, #8b5cf6) !important;
+    right: -20px !important;
+    border-radius: 200px !important;
+}
+
+.simplebar-horizontal {
+    display: none;
+}
+
+.simplebar-content-wrapper {
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+}
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+    display: initial;
+    width: initial;
+    height: initial;
 }
