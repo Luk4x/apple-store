@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 import {
     HiOutlineMagnifyingGlass,
@@ -23,27 +23,44 @@ export default function Header() {
     const products = useSelector(selectCartProducts);
 
     const [blur, setBlur] = useState(false);
-    const scrollY = useScrollYPosition();
 
     const handleMobileMenu = async () => {
         setBlur(!blur);
 
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        !blur && (document.body.style.overflowX = 'hidden');
-
+        const viewport = document.querySelector('.os-viewport');
+        viewport?.scroll(0, 0);
         // await scroll top to hide scroll based on scroll position divided by 2
-        setTimeout(() => {
-            blur && (document.body.style.overflowX = 'auto');
-            document.body.style.overflowY = blur ? 'auto' : 'hidden';
-        }, 100 + scrollY / 2);
+        if (viewport !== null) {
+            setTimeout(() => {
+                viewport?.classList.toggle('hide-scroll');
+            }, 100 + viewport?.scrollTop / 2);
+        }
+
+        console.log(viewport?.scrollTop);
+
+        // if (viewport !== null) {
+        //     blur
+        //         ? (viewport.style.overflow = 'hidden !important')
+        //         : (viewport.style.overflow = 'scroll !important');
+        // }
+
+        // if (viewport !== null) {
+        //     blur
+        //         ? (viewport.style.overflowY = 'hidden')
+        //         : (viewport.style.overflowY = 'auto');
+        // }
+        // console.log(viewport?.scrollTop);
+
+        // document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+        // !blur && (document.body.style.overflowX = 'hidden');
     };
 
     return (
         <header className="sticky top-0 z-30 flex w-full items-center justify-between border-b-2 border-gray-500 bg-[#e7ecee] p-4">
             <div
-                className={`flex items-center justify-center gap-4 ${
-                    blur ? 'after:block' : 'after:hidden'
-                } after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:backdrop-blur-lg after:content-[''] md:w-1/5`}
+                className={`flex items-center justify-center ${
+                    blur ? '-z-10 after:block' : 'gap-4 after:hidden md:w-1/5'
+                } after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:backdrop-blur-[10px] after:content-['']`}
             >
                 <Popover className="relative md:hidden">
                     {({ open }) => (
@@ -83,12 +100,13 @@ export default function Header() {
                         </>
                     )}
                 </Popover>
-                <Link href="/">
-                    <SiApple
-                        className={`${
-                            blur ? 'translate-x-[150px] text-2xl' : 'text-4xl'
-                        } cursor-pointer opacity-75 transition duration-[450ms] hover:opacity-100`}
-                    />
+                <Link
+                    href="/"
+                    className={`${
+                        blur ? 'translate-x-[150px] text-2xl' : 'text-4xl'
+                    } cursor-pointer opacity-75 transition duration-[450ms] hover:opacity-100`}
+                >
+                    <SiApple />
                 </Link>
             </div>
             <div className="hidden flex-1 items-center justify-center space-x-8 md:flex">

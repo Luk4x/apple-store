@@ -5,11 +5,6 @@
 @layer base {
     html {
         @apply scroll-smooth;
-        scrollbar-width: 0;
-    }
-
-    html::-webkit-scrollbar {
-        width: 0;
     }
 
     body {
@@ -47,24 +42,30 @@
     }
 }
 
-.simplebar-scrollbar::before {
+html {
+    scrollbar-width: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+.hide-scroll {
+    overflow: hidden !important;
+}
+
+.os-viewport {
+    scroll-behavior: smooth !important;
+}
+
+.os-scrollbar-horizontal {
+    display: none !important;
+}
+
+.os-scrollbar-handle {
     background: linear-gradient(45deg, #ec4899, #8b5cf6) !important;
-    right: -20px !important;
+    opacity: 0.65 !important;
+    padding-right: 20px !important;
     border-radius: 200px !important;
-}
-
-.simplebar-horizontal {
-    display: none;
-}
-
-.simplebar-content-wrapper {
-    scrollbar-width: auto;
-    -ms-overflow-style: auto;
-}
-
-.simplebar-content-wrapper::-webkit-scrollbar,
-.simplebar-hide-scrollbar::-webkit-scrollbar {
-    display: initial;
-    width: initial;
-    height: initial;
+    transition: 0.1s linear !important;
 }

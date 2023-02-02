@@ -30,7 +30,7 @@ export default function Home({ categories, products, session }: Props) {
     return (
         <div>
             <Header />
-            <main className="relative h-[200vh] bg-[#E7ECEE]">
+            <main className="relative h-[200vh] bg-[#E7ECEE]" id="home">
                 <section className="sticky top-20 mx-auto flex h-screen max-w-[1350px] flex-col-reverse items-center justify-end gap-24 overflow-hidden px-8 md:-translate-y-10 md:flex-row md:justify-between">
                     <div className="relative space-y-8">
                         <h1 className="z-10 space-y-1 text-center text-4xl font-semibold xs:space-y-3 xs:text-5xl xs:tracking-wide md:text-left lg:text-6xl xl:text-7xl">

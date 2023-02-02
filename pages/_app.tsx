@@ -6,30 +6,28 @@ import { SessionProvider } from 'next-auth/react';
 import { Provider } from 'react-redux';
 import { store } from '../redux/store';
 
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
-// import { useEffect, useRef } from 'react';
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+import 'overlayscrollbars/overlayscrollbars.css';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
-    // const barRef = useRef<any>(null);
-
-    // useEffect(() => {
-    //     barRef.current
-    //         ?.getScrollElement()
-    //         .addEventListener('scroll', ({ target }: any) => {
-    //             console.log(target.scrollTop);
-    //         });
-    // });
-
     return (
         <SessionProvider session={session}>
             <Provider store={store}>
-                {/* <SimpleBar ref={barRef} className="h-screen">
-                    <Toaster />
-                    <Component {...pageProps} />
-                </SimpleBar> */}
                 <Toaster />
-                <Component {...pageProps} />
+                <OverlayScrollbarsComponent
+                    defer
+                    element="div"
+                    options={{ scrollbars: { autoHide: 'scroll' } }}
+                    style={{ height: '100vh', scrollBehavior: 'smooth' }}
+                    id="overlay-scroll"
+                    // events={{
+                    //     scroll: (i, e: any) => {
+                    //         console.log(e.target?.scrollTop);
+                    //     }
+                    // }}
+                >
+                    <Component {...pageProps} />
+                </OverlayScrollbarsComponent>
             </Provider>
         </SessionProvider>
     );
