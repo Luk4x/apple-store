@@ -24,9 +24,6 @@
         "react-icons": "^4.7.1",
         "react-redux": "^8.0.5",
         "react-responsive": "^9.0.2",
-        "react-scroll-up": "^1.4.0",
-        "react-use-scroll-position": "^2.0.0",
-        "simplebar-react": "^3.2.0",
         "stripe": "^11.5.0"
     },
     "devDependencies": {
