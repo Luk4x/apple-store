@@ -9,7 +9,6 @@ import Product from '../components/Product';
 
 import { fetchCategories } from '../utils/fetchCategories';
 import { fetchProducts } from '../utils/fetchProducts';
-import Cart from '../components/Cart';
 
 import { getSession } from 'next-auth/react';
 import type { Session } from 'next-auth';
@@ -113,7 +112,6 @@ export default function Home({ categories, products, session }: Props) {
                     </Tab.Group>
                 </div>
             </section>
-            <Cart />
         </div>
     );
 }

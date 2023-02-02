@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 
 import {
     HiOutlineMagnifyingGlass,
@@ -16,8 +16,6 @@ import { useSelector } from 'react-redux';
 import { selectCartProducts } from '../redux/cartSlice';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
-import { useScrollYPosition } from 'react-use-scroll-position';
-
 export default function Header() {
     const { data: session } = useSession();
     const products = useSelector(selectCartProducts);
@@ -29,30 +27,12 @@ export default function Header() {
 
         const viewport = document.querySelector('.os-viewport');
         viewport?.scroll(0, 0);
-        // await scroll top to hide scroll based on scroll position divided by 2
+        // await scroll top to hide scroll based on: scroll position divided by 2
         if (viewport !== null) {
             setTimeout(() => {
                 viewport?.classList.toggle('hide-scroll');
             }, 100 + viewport?.scrollTop / 2);
         }
-
-        console.log(viewport?.scrollTop);
-
-        // if (viewport !== null) {
-        //     blur
-        //         ? (viewport.style.overflow = 'hidden !important')
-        //         : (viewport.style.overflow = 'scroll !important');
-        // }
-
-        // if (viewport !== null) {
-        //     blur
-        //         ? (viewport.style.overflowY = 'hidden')
-        //         : (viewport.style.overflowY = 'auto');
-        // }
-        // console.log(viewport?.scrollTop);
-
-        // document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
-        // !blur && (document.body.style.overflowX = 'hidden');
     };
 
     return (
@@ -60,7 +40,7 @@ export default function Header() {
             <div
                 className={`flex items-center justify-center ${
                     blur ? '-z-10 after:block' : 'gap-4 after:hidden md:w-1/5'
-                } after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:backdrop-blur-[10px] after:content-['']`}
+                } after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:backdrop-blur-[8px] after:content-['']`}
             >
                 <Popover className="relative md:hidden">
                     {({ open }) => (
