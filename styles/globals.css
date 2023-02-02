@@ -54,9 +54,9 @@ html::-webkit-scrollbar {
     overflow: hidden !important;
 }
 
-.os-viewport {
+/* .os-viewport {
     scroll-behavior: smooth !important;
-}
+} */
 
 .os-scrollbar-horizontal {
     display: none !important;

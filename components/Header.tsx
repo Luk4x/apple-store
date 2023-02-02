@@ -26,7 +26,10 @@ export default function Header() {
         setBlur(!blur);
 
         const viewport = document.querySelector('.os-viewport');
-        viewport?.scroll(0, 0);
+        viewport?.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
         // await scroll top to hide scroll based on: scroll position divided by 2
         if (viewport !== null) {
             setTimeout(() => {

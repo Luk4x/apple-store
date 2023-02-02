@@ -7,7 +7,9 @@ import { selectCartProducts } from '../redux/cartSlice';
 export default function Cart() {
     const products = useSelector(selectCartProducts);
 
-    return products.length === 0 ? null : (
+    return products.length === 0 ? (
+        <div className="h-16" />
+    ) : (
         <div
             className="sticky z-50 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-gray-300 "
             style={{ left: 'calc(100vw - 100px)', top: 'calc(100vh - 100px)' }}

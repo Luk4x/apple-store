@@ -47,9 +47,18 @@ export default function Home({ categories, products, session }: Props) {
                             </span>
                         </h1>
                         <div className="z-10 flex items-center justify-center space-x-4 xs:space-x-8 md:justify-start">
-                            <a href="#shop">
-                                <Button title="Comprar" />
-                            </a>
+                            <Button
+                                title="Comprar"
+                                onClick={() => {
+                                    // scroll to  products showcase
+                                    const shop = document.querySelector('#shop');
+                                    if (shop !== null) {
+                                        shop.scrollIntoView({
+                                            behavior: 'smooth'
+                                        });
+                                    }
+                                }}
+                            />
                             <a
                                 href="#"
                                 className="link mix-blend-luminosity"
@@ -78,9 +87,9 @@ export default function Home({ categories, products, session }: Props) {
                     </div>
                 </section>
             </main>
-            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b] py-16">
+            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b] pt-16">
                 <Cart />
-                <div className="space-y-10" id="shop">
+                <div className="-translate-y-16 space-y-10" id="shop">
                     <h1 className="text-center text-3xl font-medium tracking-wide text-white xs:text-4xl md:text-5xl">
                         Nossos Produtos
                     </h1>

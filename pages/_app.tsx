@@ -11,8 +11,18 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/overlayscrollbars.css';
 
 import { Analytics } from '@vercel/analytics/react';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+    useEffect(() => {
+        // scroll to top on each page changing (scroll lib bug)
+        const viewport = document.querySelector('.os-viewport');
+        viewport?.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+    });
+
     return (
         <SessionProvider session={session}>
             <Provider store={store}>
