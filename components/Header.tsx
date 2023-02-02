@@ -85,6 +85,7 @@ export default function Header() {
                     className={`${
                         blur ? 'translate-x-[150px] text-2xl' : 'text-4xl'
                     } cursor-pointer opacity-75 transition duration-[450ms] hover:opacity-100`}
+                    onClick={() => blur && handleMobileMenu()}
                 >
                     <SiApple />
                 </Link>
