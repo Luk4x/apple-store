@@ -68,7 +68,7 @@ export default function Checkout() {
             </Head>
             <div className="min-h-screen overflow-hidden bg-[#e7ecee]">
                 <Header />
-                <main className="relative mx-auto max-w-5xl pb-24" id="checkoutTop">
+                <main className="relative mx-auto max-w-5xl pb-24">
                     <div className="px-5">
                         <h2 className="lg: my-4 text-3xl font-semibold lg:text-4xl">
                             {products.length > 0

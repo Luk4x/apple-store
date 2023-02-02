@@ -31,8 +31,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
                     defer
                     element="div"
                     options={{ scrollbars: { autoHide: 'scroll' } }}
-                    style={{ height: '100vh', scrollBehavior: 'smooth' }}
-                    id="overlay-scroll"
+                    style={{ height: '100vh' }}
                 >
                     <Component {...pageProps} />
                 </OverlayScrollbarsComponent>
