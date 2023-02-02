@@ -35,7 +35,7 @@ export default function document() {
                     href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
                     rel="stylesheet"
                 />
-                <title>Apple Store</title>
+                <title>Apple Store | The Best Apple E-Commerce</title>
             </Head>
             <body>
                 <Main />
