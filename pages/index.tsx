@@ -9,6 +9,7 @@ import Product from '../components/Product';
 
 import { fetchCategories } from '../utils/fetchCategories';
 import { fetchProducts } from '../utils/fetchProducts';
+import Cart from '../components/Cart';
 
 import { getSession } from 'next-auth/react';
 import type { Session } from 'next-auth';
@@ -27,7 +28,7 @@ export default function Home({ categories, products, session }: Props) {
     };
 
     return (
-        <div>
+        <>
             <Header />
             <main className="relative h-[200vh] bg-[#E7ECEE]" id="home">
                 <section className="sticky top-20 mx-auto flex h-screen max-w-[1350px] flex-col-reverse items-center justify-end gap-24 overflow-hidden px-8 md:-translate-y-10 md:flex-row md:justify-between">
@@ -77,8 +78,9 @@ export default function Home({ categories, products, session }: Props) {
                     </div>
                 </section>
             </main>
-            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b]">
-                <div className="space-y-10 py-16" id="shop">
+            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b] py-16">
+                <Cart />
+                <div className="space-y-10" id="shop">
                     <h1 className="text-center text-3xl font-medium tracking-wide text-white xs:text-4xl md:text-5xl">
                         Nossos Produtos
                     </h1>
@@ -112,7 +114,7 @@ export default function Home({ categories, products, session }: Props) {
                     </Tab.Group>
                 </div>
             </section>
-        </div>
+        </>
     );
 }
 
