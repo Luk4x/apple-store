@@ -359,7 +359,7 @@
 
 ## 🗓️ Etapas
 
-> 39 das atuais 50 etapas já foram concluídas, mas novas podem ser adicionadas!
+> 45 das atuais 54 etapas já foram concluídas, mas novas podem ser adicionadas!
 
 <table align="center" height="548px">
   <tr>
@@ -677,7 +677,7 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
     </td>
     <td>
       Divisão de branches de Produção e Desenvolvimento
@@ -685,10 +685,59 @@
   </tr>
   <tr>
     <td>
+      🗹
+    </td>
+    <td>
+      Desenvolvimento Cross-Browser
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Estilização do Scroll
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Melhoria da responsividade do <code>pages/index</code>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      <details>
+        <summary>Correção geral de Bugs</summary>
+        󠁼󠁼󠁼————————————󠁼<br/>
+        🗹 Correção do menu Mobile do <code>pages/index</code> com o novo scroll<br/>
+        🗹 Correção da posição do <code>components/Cart</code> com o novo scroll<br/>
+        🗹 Correção do botão <b>Comprar</b> do <code>pages/index</code> com o novo scroll<br/>
+        🗹 Correção do título do <code>Head</code><br/>
+        🗹 Correção do scroll do <code>pages/success</code><br/>
+        🗹 Correção do error <b>validateDOMNesting</b> no <code>pages/success</code>
+      </details>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      🗹
+    </td>
+    <td>
+      Implementação do <a href="https://vercel.com/docs/concepts/analytics/audiences/quickstart">Vercel Analytics</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
       ☐
     </td>
     <td>
-      Desenvolvimento Cross-Browser <!-- e estilização do scroll -->
+      Adição das minhas redes sociais
     </td>
   </tr>
   <tr>
