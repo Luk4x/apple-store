@@ -51,10 +51,7 @@ export default function Success({ products, trackingNumber }: Props) {
     return (
         <div>
             <Head>
-                <title>
-                    Apple Store | Obrigado{' '}
-                    {session ? session.user?.name?.split(' ')[0] : 'Convidado'}
-                </title>
+                <title>Apple Store | Agradecimentos</title>
             </Head>
             <header className="mx-auto max-w-xl">
                 <Link href="/">

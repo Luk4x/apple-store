@@ -30,9 +30,6 @@ export default function Home({ categories, products, session }: Props) {
 
     return (
         <>
-            <Head>
-                <title>Apple Store | The Best Apple E-Commerce</title>
-            </Head>
             <Header />
             <main className="relative h-[200vh] bg-[#E7ECEE]" id="home">
                 <section className="sticky top-20 mx-auto flex h-screen max-w-[1350px] flex-col-reverse items-center justify-end gap-24 overflow-hidden px-8 md:-translate-y-10 md:flex-row md:justify-between">
