@@ -234,11 +234,11 @@
       </h6>
     </td>
    <td align="center">
-      <a href="https://www.npmjs.com/package/react-use-scroll-position/">
-        <img src="https://user-images.githubusercontent.com/86276393/212925340-d173a3be-d947-4620-b6e6-734d1fdf8fd0.png" height="65px" alt="npm icon"/><br>
+      <a href="https://kingsora.github.io/OverlayScrollbars/">
+        <img src="https://user-images.githubusercontent.com/86276393/216752819-fcf9f694-9e69-476b-b22a-0930d1b175cd.png" height="65px" alt="overlayscrollbars icon"/><br>
         <sub>
           <b>
-            <pre>React use<br/>Scroll Position</pre>
+            <pre>Overlayscroll<br/>React</pre>
           </b>
         </sub>
       </a>
@@ -246,7 +246,24 @@
         <details>
           <summary>Motivo</summary>
           <br/>
-          <i>Para fornecer a informação de qual parte da página o usuário está visualizando, e auxiliar na responsividade a partir dela.</i>
+          <i>Para realizar a estilização do scroll e manipulação da viewport.</i>
+        </details>
+      </h6>
+    </td>
+    <td align="center">
+      <a href="https://vercel.com/docs/concepts/analytics/audiences/quickstart">
+        <img src="https://user-images.githubusercontent.com/86276393/216752968-b268a1a8-f0ca-463f-812e-a58dad96ee43.png" height="65px" alt="vercel icon"/><br>
+        <sub>
+          <b>
+            <pre>Vercel<br/>Analytics</pre>
+          </b>
+        </sub>
+      </a>
+     <h6>
+        <details>
+          <summary>Motivo</summary>
+          <br/>
+          <i>Para rastrear as visualizações do site.</i>
         </details>
       </h6>
     </td>
@@ -284,6 +301,8 @@
         </details>
       </h6>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/">
         <img src="https://skillicons.dev/icons?i=js" width="65px" alt="Javascript icon"/><br>
@@ -301,8 +320,6 @@
         </details>
       </h6>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/">
         <img src="https://skillicons.dev/icons?i=css" width="65px" alt="CSS3 icon"/><br>
