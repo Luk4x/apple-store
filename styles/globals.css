@@ -18,7 +18,7 @@
     }
 
     .tooltip {
-        @apply before:absolute before:-left-6 before:-bottom-9 before:rounded-md before:bg-[#e7ecee] before:p-2 before:text-sm before:font-medium before:text-gray-500 before:opacity-0 before:shadow-xl before:transition-all before:duration-300 hover:before:opacity-100 md:before:-left-4;
+        @apply before:absolute before:-left-6 before:-bottom-10 before:rounded-md before:bg-[#1b1b1b] before:p-2 before:text-sm before:font-medium before:text-gray-300 before:opacity-0 before:shadow-xl before:transition-all before:duration-300 hover:before:opacity-100 md:before:-left-4;
     }
 
     .mobileHeaderLink {

@@ -16,7 +16,9 @@ import {
     FaWhatsapp,
     FaTelegramPlane,
     FaInstagram,
-    FaDiscord
+    FaDiscord,
+    FaRegCopyright,
+    FaTerminal
 } from 'react-icons/fa';
 import { Popover, Menu, Transition } from '@headlessui/react';
 import toast from 'react-hot-toast';
@@ -74,7 +76,7 @@ export default function Header() {
                                 leaveTo="opacity-0 -translate-x-2"
                             >
                                 <Popover.Panel className="absolute -top-5 -z-10 h-screen after:absolute after:left-0 after:top-0 after:-z-20 after:h-screen after:w-screen after:content-['']">
-                                    <div className="text-md absolute -left-7 top-[2px] -z-10 ml-2 flex h-screen w-[250px] flex-col gap-2 bg-[#e7ecee] p-6 pt-16 text-center shadow-[0_0_100px_100px_rgba(0,0,0,0.2)] before:absolute before:left-0 before:-bottom-2 before:h-[20px] before:w-[250px] before:bg-[#e7ecee] before:content-['']">
+                                    <div className="text-md absolute -left-7 -top-[3px] -z-10 ml-2 flex h-screen w-[250px] flex-col gap-2 bg-[#e7ecee] p-6 pt-16 text-center shadow-[0_0_100px_100px_rgba(0,0,0,0.2)] before:absolute before:left-0 before:-bottom-2 before:h-[20px] before:w-[250px] before:bg-[#e7ecee] before:content-['']">
                                         <Link href="/" className="mobileHeaderLink">
                                             Outros Produtos
                                         </Link>
@@ -88,6 +90,68 @@ export default function Header() {
                                             Só na Apple
                                         </Link>
                                     </div>
+                                    <div className="relative -left-[20px] mt-[260px] mb-2 grid w-[250px] grid-cols-3  place-items-center gap-y-4 bg-[#1b1b1b] py-4 px-1 text-4xl">
+                                        <a
+                                            href="https://www.linkedin.com/in/lucasmacielf/"
+                                            target="_blank"
+                                        >
+                                            <FaLinkedinIn className="text-[#0077B5]" />
+                                        </a>
+                                        <a
+                                            href="https://github.com/Luk4x/"
+                                            target="_blank"
+                                        >
+                                            <FaGithub className="text-[#F2F2F2]" />
+                                        </a>
+                                        <a
+                                            href="https://wa.me/5522996112570?text=Yo%20Lucas,%20vim%20pela%20Apple%20Store."
+                                            target="_blank"
+                                        >
+                                            <FaWhatsapp className="text-[#45c655]" />
+                                        </a>
+                                        <a href="https://t.me/lu_k4x" target="_blank">
+                                            <FaTelegramPlane className="text-[#25a3e1]" />
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/lu_k4x/"
+                                            target="_blank"
+                                        >
+                                            <FaInstagram className="text-[#E4405F]" />
+                                        </a>
+                                        <button
+                                            onClick={() => {
+                                                navigator.clipboard.writeText(
+                                                    'Luk4x#5068'
+                                                );
+                                                toast.success('Discord copiado!', {
+                                                    position: 'bottom-center'
+                                                });
+                                            }}
+                                        >
+                                            <FaDiscord className="text-[#545fef] outline-none" />
+                                        </button>
+                                    </div>
+                                    <p className="relative -left-[20px] text-center text-sm">
+                                        <span className="mb-1 inline-block">
+                                            <span className="font-semibold">
+                                                Apple Store
+                                            </span>{' '}
+                                            <FaRegCopyright className="inline" />{' '}
+                                            2022-2023
+                                        </span>
+                                        <br />
+                                        <span className="border-t border-[#232428]">
+                                            <FaTerminal className="inline" /> Desenvolvido
+                                            por{' '}
+                                            <a
+                                                href="https://github.com/Luk4x"
+                                                target="_blank"
+                                                className="font-semibold hover:underline"
+                                            >
+                                                Luk4x
+                                            </a>
+                                        </span>
+                                    </p>
                                 </Popover.Panel>
                             </Transition>
                         </>
@@ -168,7 +232,7 @@ export default function Header() {
                                     </button>
                                 </Menu.Item>
                             </div>
-                            <IoShareSocial className="h-24 w-24 text-violet-600" />
+                            <IoShareSocial className="h-36 w-36 text-violet-600" />
                         </Menu.Items>
                     </Transition>
                 </Menu>
