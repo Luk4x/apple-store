@@ -964,7 +964,7 @@ Feito isso:
 | :placard: Vitrine.Dev | Lucas Maciel |
 | -------------  | --- |
 | :sparkles: Nome        | **🛍️ Apple Store**
-| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity.io, next-auth, headlessui, react hot toast, random string, react currency formatter, react responsive, , react icons, javascript, css, html
+| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity.io, next-auth, headlessui, react hot toast, random string, vercel analytics, react responsive, overlayScrollbars react, react icons, javascript, css, html
 | :camera: Img         | <img src="https://user-images.githubusercontent.com/86276393/212569133-c845f016-df7f-41ee-a3a1-43bbbc2a6669.png#vitrinedev" alt="vitrine.dev thumb" width="100%"/>
 
 </details>
