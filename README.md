@@ -754,6 +754,14 @@
       ☐
     </td>
     <td>
+      Personalização dos Toasts
+    </td>
+  </tr>
+  <tr>
+    <td>
+      ☐
+    </td>
+    <td>
       Otimização da performance do projeto <!-- https://www.linkedin.com/posts/dev-luiz-carlos_frontend-desenvolvedores-html-activity-7019619056190173185-B56Z?utm_source=share&utm_medium=member_desktop, nextfont --> 
     </td>
   </tr>
@@ -815,6 +823,7 @@
   
   <!-- suggest user account data in payment -->
   <!-- migrate from tailwind to styled-components if/when necessary -->
+  <!-- integrate with kayke and luiz e-commerce -->
 </table>
 
 ## 📝 Sobre
@@ -955,7 +964,7 @@ Feito isso:
 | :placard: Vitrine.Dev | Lucas Maciel |
 | -------------  | --- |
 | :sparkles: Nome        | **🛍️ Apple Store**
-| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity.io, next-auth, headlessui, react hot toast, random string, react currency formatter, react responsive, react use scroll position, react icons, javascript, css, html
+| :label: Tecnologias | nextjs, typescript, redux, stripe, reactjs, tailwind css, sanity.io, next-auth, headlessui, react hot toast, random string, react currency formatter, react responsive, , react icons, javascript, css, html
 | :camera: Img         | <img src="https://user-images.githubusercontent.com/86276393/212569133-c845f016-df7f-41ee-a3a1-43bbbc2a6669.png#vitrinedev" alt="vitrine.dev thumb" width="100%"/>
 
 </details>
@@ -968,7 +977,7 @@ Feito isso:
 </p>
 
 <!--
-  keep tecnology and phase numbers updated
+  keep tecnology, phase numbers and vitrinedev techs updated
   add vitrinedev and portfolio-project tag
   Change Repo/Settings/Social Preview
 -->
