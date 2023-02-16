@@ -359,7 +359,7 @@
 
 ## 🗓️ Etapas
 
-> 45 das atuais 54 etapas já foram concluídas, mas novas podem ser adicionadas!
+> 46 das atuais 54 etapas já foram concluídas, mas novas podem ser adicionadas!
 
 <table align="center" height="548px">
   <tr>
@@ -721,6 +721,7 @@
         🗹 Correção do título do <code>Head</code><br/>
         🗹 Correção do scroll do <code>pages/success</code><br/>
         🗹 Correção do error <b>validateDOMNesting</b> no <code>pages/success</code>
+        🗹 Correção do SEO
       </details>
     </td>
   </tr>
@@ -734,7 +735,7 @@
   </tr>
   <tr>
     <td>
-      ☐
+      🗹
     </td>
     <td>
       Adição das minhas redes sociais
