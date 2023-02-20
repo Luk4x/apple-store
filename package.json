@@ -11,10 +11,12 @@
         "@reduxjs/toolkit": "^1.9.1",
         "@sanity/image-url": "^1.0.1",
         "@stripe/stripe-js": "^1.46.0",
+        "@vercel/analytics": "^0.1.8",
         "next": "latest",
         "next-auth": "^4.18.7",
         "next-auth-sanity": "^1.4.4",
         "next-sanity": "^3.1.8",
+        "overlayscrollbars-react": "^0.5.0",
         "random-string": "^0.2.0",
         "react": "18.2.0",
         "react-dom": "18.2.0",
@@ -22,7 +24,6 @@
         "react-icons": "^4.7.1",
         "react-redux": "^8.0.5",
         "react-responsive": "^9.0.2",
-        "react-use-scroll-position": "^2.0.0",
         "stripe": "^11.5.0"
     },
     "devDependencies": {

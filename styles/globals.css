@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply scroll-smooth;
+    * {
+        -webkit-tap-highlight-color: transparent;
     }
 
     body {
@@ -18,7 +18,7 @@
     }
 
     .tooltip {
-        @apply before:absolute before:-left-6 before:-bottom-9 before:rounded-md before:bg-[#e7ecee] before:p-2 before:text-sm before:font-medium before:text-gray-500 before:opacity-0 before:shadow-xl before:transition-all before:duration-300 hover:before:opacity-100 md:before:-left-4;
+        @apply before:absolute before:-left-6 before:-bottom-10 before:rounded-md before:bg-[#1b1b1b] before:p-2 before:text-sm before:font-medium before:text-gray-300 before:opacity-0 before:shadow-xl before:transition-all before:duration-300 hover:before:opacity-100 md:before:-left-4;
     }
 
     .mobileHeaderLink {
@@ -40,4 +40,48 @@
     .tabPanel {
         @apply grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3;
     }
+
+    .menuList {
+        @apply absolute top-9 flex w-80 items-center justify-between rounded-md bg-[#1b1b1b] px-4 py-3 text-white shadow-lg;
+    }
+
+    .menuList a,
+    .menuList button {
+        @apply relative inline-flex items-center gap-2 bg-none px-1 before:absolute before:inset-x-0 before:-bottom-0.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-violet-600 before:transition-all before:duration-300 hover:before:scale-x-100;
+    }
+
+    .menuList svg {
+        @apply text-[18px];
+    }
+}
+
+html {
+    scrollbar-width: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+.hide-scroll {
+    overflow: hidden !important;
+}
+
+/* .os-viewport {
+    scroll-behavior: smooth !important;
+} */
+
+.os-scrollbar-horizontal {
+    display: none !important;
+}
+
+.os-scrollbar-handle {
+    background: linear-gradient(45deg, #ec4899, #8b5cf6) !important;
+    opacity: 0.65 !important;
+    padding-right: 20px !important;
+    border-radius: 200px !important;
+    transition: 0.1s linear !important;
+}
+
+* {
 }

@@ -4,11 +4,11 @@ interface Props {
 
 export default function Currency({ value }: Props) {
     return (
-        <p>
+        <span>
             {new Intl.NumberFormat('pt-BR', {
                 style: 'currency',
                 currency: 'BRL'
             }).format(value)}
-        </p>
+        </span>
     );
 }

@@ -19,6 +19,8 @@ import { fetchLineProducts } from '../utils/fetchLineProducts';
 import { useSession } from 'next-auth/react';
 import { SiApple } from 'react-icons/si';
 
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+
 interface Props {
     products: StripeProduct[];
     trackingNumber: string;
@@ -49,7 +51,7 @@ export default function Success({ products, trackingNumber }: Props) {
     return (
         <div>
             <Head>
-                <title>Thanks - Apple Store</title>
+                <title>Apple Store | Agradecimentos</title>
             </Head>
             <header className="mx-auto max-w-xl">
                 <Link href="/">
@@ -116,7 +118,12 @@ export default function Success({ products, trackingNumber }: Props) {
                     </div>
                 </section>
                 {mounted && (
-                    <section className="overflow-y-scroll border-y border-l border-gray-300 bg-[#fafafa] lg:order-2 lg:col-span-4 lg:h-screen lg:border-t-0">
+                    <OverlayScrollbarsComponent
+                        defer
+                        element="section"
+                        options={{ scrollbars: { autoHide: 'scroll' } }}
+                        className="border-y border-l border-gray-300 bg-[#fafafa] lg:order-2 lg:col-span-4 lg:h-screen lg:border-t-0"
+                    >
                         <div
                             className={`w-full ${
                                 showOrderSummaryCondition && 'border-b'
@@ -194,7 +201,7 @@ export default function Success({ products, trackingNumber }: Props) {
                                 </div>
                             </div>
                         )}
-                    </section>
+                    </OverlayScrollbarsComponent>
                 )}
             </main>
         </div>

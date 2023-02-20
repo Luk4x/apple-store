@@ -1,5 +1,6 @@
 import type { GetServerSideProps } from 'next';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import { Tab } from '@headlessui/react';
 
@@ -28,10 +29,10 @@ export default function Home({ categories, products, session }: Props) {
     };
 
     return (
-        <div>
+        <>
             <Header />
-            <main className="relative h-[200vh] bg-[#E7ECEE]">
-                <section className="sticky top-20 mx-auto flex h-screen max-w-[1350px] flex-col-reverse items-center justify-end gap-24 overflow-hidden px-8 md:flex-row md:justify-between">
+            <main className="relative h-[200vh] bg-[#E7ECEE]" id="home">
+                <section className="sticky top-20 mx-auto flex h-screen max-w-[1350px] flex-col-reverse items-center justify-end gap-24 overflow-hidden px-8 md:-translate-y-10 md:flex-row md:justify-between">
                     <div className="relative space-y-8">
                         <h1 className="z-10 space-y-1 text-center text-4xl font-semibold xs:space-y-3 xs:text-5xl xs:tracking-wide md:text-left lg:text-6xl xl:text-7xl">
                             <span className="block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent mix-blend-difference">
@@ -47,9 +48,18 @@ export default function Home({ categories, products, session }: Props) {
                             </span>
                         </h1>
                         <div className="z-10 flex items-center justify-center space-x-4 xs:space-x-8 md:justify-start">
-                            <a href="#shop">
-                                <Button title="Comprar" />
-                            </a>
+                            <Button
+                                title="Comprar"
+                                onClick={() => {
+                                    // scroll to  products showcase
+                                    const shop = document.querySelector('#shop');
+                                    if (shop !== null) {
+                                        shop.scrollIntoView({
+                                            behavior: 'smooth'
+                                        });
+                                    }
+                                }}
+                            />
                             <a
                                 href="#"
                                 className="link mix-blend-luminosity"
@@ -78,19 +88,20 @@ export default function Home({ categories, products, session }: Props) {
                     </div>
                 </section>
             </main>
-            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b]">
-                <div className="space-y-10 py-16" id="shop">
-                    <h1 className="text-center text-4xl font-medium tracking-wide text-white md:text-5xl">
-                        Novas Promoções
+            <section className="relative z-40 -mt-[100vh] min-h-screen rounded-t-[52px] bg-[#1b1b1b] pt-16">
+                <Cart />
+                <div className="-translate-y-16 space-y-10" id="shop">
+                    <h1 className="text-center text-3xl font-medium tracking-wide text-white xs:text-4xl md:text-5xl">
+                        Nossos Produtos
                     </h1>
                     <Tab.Group>
-                        <Tab.List className="flex justify-center overflow-x-scroll">
+                        <Tab.List className="grid grid-cols-2 justify-center border-2 border-b-0 border-[#35383c] xs:flex xs:border-none">
                             {categories.map(category => (
                                 <Tab
                                     key={category._id}
                                     id={category._id}
                                     className={({ selected }) =>
-                                        `whitespace-nowrap rounded-t-lg py-3 px-5 text-sm font-light outline-none md:py-6 md:text-base ${
+                                        `whitespace-nowrap py-3 px-5 text-sm font-light outline-none xs:rounded-t-lg md:py-6 md:text-base ${
                                             selected
                                                 ? 'borderGradient bg-[#35383C] text-white'
                                                 : 'border-b-2 border-[#35383c] text-[#747474]'
@@ -113,8 +124,7 @@ export default function Home({ categories, products, session }: Props) {
                     </Tab.Group>
                 </div>
             </section>
-            <Cart />
-        </div>
+        </>
     );
 }
 
